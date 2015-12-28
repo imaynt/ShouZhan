@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 基本颜色定义 -->
+    <color name="score_red">#EB5F5F</color>
+    <color name="score_bg">#383B47</color>
+    
+    <color name="red">#FF0000</color>
+    <color name="grey">#B2B2B2</color>
+    <color name="lgrey">#d6d6d6</color>
+    <color name="dgrey">#C9C9C9</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#ffff00</color>
+    <color name="orange">#FDBB2B</color>
+    <color name="dorange">#FF5722</color>
+    <color name="golden">#ff6600</color>
+    <color name="poloere">#F8F3F0</color>
+    <color name="theme_color">#198ABF</color>
+    <color name="more_bg_color">#F3F6F8</color>
+
+    <!-- 按钮背景颜色定义 -->
+    <color name="btn_unable">#9f353E47</color>
+    <!-- 按钮不可点使用颜色 -->
+    <color name="btn_red">#EC4E43</color>
+    <!-- 红色按钮 -->
+    <color name="btn_dred">#BD1F14</color>
+    <!-- 深一点的红色 -->
+    <color name="btn_lred">#FF6750</color>
+    <!-- 淡一点的红色 -->
+    <color name="btn_green">#55BC75</color>
+    <!-- 绿色按钮 -->
+    <color name="btn_dgreen">#27B362</color>
+    <!-- 深一点的绿色 -->
+    <color name="btn_lgreen">#88E3D7</color>
+    <!-- 淡一点的绿色 -->
+    <color name="btn_grey">#CAC8C9</color>
+    <!-- 灰色按钮 -->
+    <color name="btn_dgrey">#575757</color>
+    <!-- 深一点的灰色 -->
+    <color name="btn_lgrey">#ECE8E7</color>
+    <!-- 淡一点的灰色 -->
+    <color name="btn_golden">#ED9444</color>
+    <!-- 金色按钮 -->
+    <color name="btn_dgolden">#C86A14</color>
+    <!-- 深一点的金色 -->
+    <color name="btn_blue">#0EA9E3</color>
+    <!-- 蓝色按钮 -->
+    <color name="btn_orange">#E86740</color>
+    <!-- 橙色按钮 -->
+    <color name="btn_color">#FA634E</color>
+ <!-- Dialog -->
+    <color name="lightgray">#F7F7F7</color>
+    <color name="lightblack">#696969</color>
+    <color name="blend_item_theme_color">#ff005092</color>
+    <color name="blend_item_divider_color">#ffededed</color>
+    <color name="blend_item_pressed_color_transparent">#19000000</color>
+    <color name="blend_item_theme_color_black">#ff393d43</color>
+    
+    <!-- yuliang配色 -->
+    
+    <!-- 顶部背景色 -->
+	<color name="background_title">#50bf83</color>
+	<color name="background_rectangles">#8dd5af</color>
+	
+	<!-- 颜色 -->
+	<!-- 深灰 -->
+	<color name="ole_gray">#323232</color>
+	<!-- 灰色 -->
+	<color name="gray">#7f8085</color>
+	<!-- 浅灰 -->
+	<color name="baby_gray">#e5e5e5</color>
+	<color name="old_blue">#48667c</color>
+	<color name="money_color">#dd9014</color>
+	<!-- 透明 -->
+	<color name="transparent">#00000000</color>
+	<color name="old_orange">#fa5000</color>
+	<color name="dialog_color">#73498b</color>
+</resources>
