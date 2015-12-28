@@ -27,6 +27,7 @@ public class MyCommonTitle extends RelativeLayout {
 		LayoutInflater.from(context).inflate(R.layout.ui_mycommontitle, this);
 		ll_back_btn = (LinearLayout) findViewById(R.id.ll_back_btn);// 后退
 		img_back = (ImageView) findViewById(R.id.aci_back_btn);// 后退
+		backEdit=(TextView) findViewById(R.id.aci_back_textview);//后退后面文字
 		title_edit = (TextView) findViewById(R.id.aci_edit_textview);// 编辑
 		share_btn = (ImageView) findViewById(R.id.aci_share_btn);// 分享
 		/**

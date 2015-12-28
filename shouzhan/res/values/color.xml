@@ -38,7 +38,7 @@
     <!-- 灰色按钮 -->
     <color name="btn_dgrey">#575757</color>
     <!-- 深一点的灰色 -->
-    <color name="btn_lgrey">#ECE8E7</color>
+    <color name="btn_lgrey">#F6F6F6</color>
     <!-- 淡一点的灰色 -->
     <color name="btn_golden">#ED9444</color>
     <!-- 金色按钮 -->
@@ -59,8 +59,8 @@
     
     <!-- yuliang配色 -->
     
-    <!-- 顶部背景色 -->
-	<color name="background_title">#50bf83</color>
+    <!-- 顶部标题背景色 -->
+	<color name="background_title">#CC0000</color>
 	<color name="background_rectangles">#8dd5af</color>
 	
 	<!-- 颜色 -->
