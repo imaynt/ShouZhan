@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    
+    <!-- 手站登陆注册===================================================================== -->
+    <string name="lor_guest">游客体验</string>
+    <string name="register_shouzhan">开通手站</string>
+    <string name="login_shouzhan">登陆手站</string>
+
+    <!-- 手站登陆注册===================================================================== -->
+
 
     <!-- 点入的appkey -->
     <string name="action_settings">Settings</string>
