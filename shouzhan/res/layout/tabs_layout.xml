@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!-- TabWidget管理所有的选项卡，id名是android指定的 -->
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/tab_rgroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/tab_bg_top"
+            android:orientation="horizontal" >
+
+            <!-- style="@style/tab_button_bottom" -->
+
+            <com.zykj.shouzhan.view.MyRadioButton
+                android:id="@+id/tab_radio1"
+                style="@style/tab_button_bottom"
+                android:checked="true"
+                android:text="@string/tab_shouzhan"
+                app:drawableTop="@drawable/tab_dw_shouzhan"
+                app:drawable_size="25dp" />
+
+            <com.zykj.shouzhan.view.MyRadioButton
+                android:id="@+id/tab_radio2"
+                style="@style/tab_button_bottom"
+                android:text="@string/tab_shangchuan"
+                app:drawableTop="@drawable/tab_dw_shangchuan"
+                app:drawable_size="25dp" />
+
+            <com.zykj.shouzhan.view.MyRadioButton
+                android:id="@+id/tab_radio3"
+                style="@style/tab_button_bottom"
+                android:text="@string/tab_guanli"
+                app:drawableTop="@drawable/tab_dw_guanli"
+                app:drawable_size="25dp" />
+
+            <com.zykj.shouzhan.view.MyRadioButton
+                android:id="@+id/tab_radio4"
+                style="@style/tab_button_bottom"
+                android:text="@string/tab_erweima"
+                app:drawableTop="@drawable/tab_dw_erweima"
+                app:drawable_size="25dp" />
+        </RadioGroup>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/tab_rgroup" >
+        </FrameLayout>
+    </RelativeLayout>
+
+</TabHost>

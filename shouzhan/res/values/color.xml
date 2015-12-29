@@ -4,6 +4,7 @@
     <!-- 基本颜色定义 -->
     <color name="score_red">#EB5F5F</color>
     <color name="score_bg">#383B47</color>
+     <color name="tab_font_normal">#343434</color>
     
     <color name="red">#FF0000</color>
     <color name="grey">#B2B2B2</color>
