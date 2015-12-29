@@ -15,6 +15,20 @@
     <string name="app_name">手站</string>
     <string name="app_content">手站是一款项目</string>
 
+    <!-- tab -->
+    <string name="tab_shouzhan">手站</string>
+    <string name="tab_shangchuan">上传</string>
+    <string name="tab_guanli">管理</string>
+    <string name="tab_erweima">二维码</string>
+    <string name="my_shouzhan">我的手站</string>
+  
+    <!-- 手站 -->
+    <string name="shouye">首页</string>
+    <string name="chanpin">产品</string>
+    <string name="gongsi">公司</string>
+    <string name="lianxi">联系</string>
+    <string name="yingwen">英文</string>
+
     <!-- 邀请好友 -->
     <string name="invite_friend">邀请好友</string>
     <string name="back">返回</string>
