@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background" 
+    android:gravity="center_horizontal">
+    
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+	    
+	    <ImageView 
+	        android:src="@drawable/background_title"
+	        android:layout_height="wrap_content"
+	        android:layout_width="match_parent"
+	        android:adjustViewBounds="true"
+	        />
+
+	    <ImageView
+	        android:id="@+id/iv_guest_background"
+	        android:layout_width="78dp"
+	        android:layout_height="18dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginTop="16dp"
+	        android:src="@drawable/guest" />
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/white"
+	        android:layout_alignTop="@+id/iv_guest_background" 
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="5dp"
+	        android:layout_marginTop="-2dp"
+	        android:textSize="16sp"
+	        android:text="@string/lor_guest"/>
+	    
+	</RelativeLayout>
+
+	<Button
+	    android:id="@+id/register_shouzhan"
+	    android:layout_width="match_parent"
+	    android:layout_height="35dp"
+	    android:layout_marginLeft="70dp"
+	    android:layout_marginRight="70dp"
+	    android:layout_marginTop="15dp"
+	    android:background="@drawable/button_lor_yuanjiao_red"
+	    android:text="@string/register_shouzhan"
+	    android:textColor="@color/white" />
+	<Button
+	    android:id="@+id/login_shouzhan"
+	    android:layout_width="match_parent"
+	    android:layout_height="35dp"
+	    android:layout_marginLeft="70dp"
+	    android:layout_marginRight="70dp"
+	    android:layout_marginTop="15dp"
+	    android:background="@drawable/button_lor_yuanjiao_white"
+	    android:text="@string/login_shouzhan"
+	    android:textColor="@color/baby_red" />
+    
+</LinearLayout>

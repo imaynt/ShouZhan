@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- 手站 -->
+	<color name="background">#EEEFF3</color>
+	<color name="baby_red">#C00</color>
+    
     <!-- 基本颜色定义 -->
     <color name="score_red">#EB5F5F</color>
     <color name="score_bg">#383B47</color>

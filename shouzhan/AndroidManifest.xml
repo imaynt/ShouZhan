@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.zykj.shouzhan.activity.InviteFriendActivity"
+            android:name="com.zykj.shouzhan.activity.LoginOrRegisterActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,13 +23,16 @@
             </intent-filter>
         </activity>
         
-        <!-- 兑换 -->
-<!--         <activity
-            android:name=".activity.DuiHuanActivity"
+        <!-- 手站登陆注册=============================================================== -->
+        <!-- 手站注册手机验证类 -->
+        <activity
+            android:name=".activity.RegisterForPhoneActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustResize" /> -->
+            android:windowSoftInputMode="stateHidden|adjustResize" /> 
+            
+      	<!-- 手站登陆注册=============================================================== -->
     </application>
 
 </manifest>
