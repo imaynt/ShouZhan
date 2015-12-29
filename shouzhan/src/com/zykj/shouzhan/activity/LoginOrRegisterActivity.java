@@ -49,7 +49,7 @@ public class LoginOrRegisterActivity  extends BaseActivity {
 	 */
 	@OnClick(R.id.login_shouzhan)
 	public void loginShouzhanOnClick(){
-		
+		startActivity(new Intent(LoginOrRegisterActivity.this,MainActivity.class));
 	}
 
 	@OnClick(R.id.iv_guest_background)
@@ -78,5 +78,8 @@ public class LoginOrRegisterActivity  extends BaseActivity {
 		
 		//保存设置语言的类型
 	}
+	
+	
+	
 
 }

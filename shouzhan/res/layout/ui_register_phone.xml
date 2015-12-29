@@ -7,4 +7,5 @@
 
     <include 
         layout="@layout/ui_myshareandstoretitle"/>
+    
 </LinearLayout>
