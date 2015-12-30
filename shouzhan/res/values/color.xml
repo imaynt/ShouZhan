@@ -4,6 +4,12 @@
     <!-- 手站 -->
 	<color name="background">#EEEFF3</color>
 	<color name="baby_red">#C00</color>
+	<color name="bg_index">#E7E7E8</color>
+	<color name="bg_index2">#F5F5F6</color>
+	<color name="bg_shouzhan">#EEEFF3</color>
+	<color name="bg_shouzhan_top">#F4F4F4</color>
+	<color name="bg_shouzhan_top_text">#656565</color>
+	
     
     <!-- 基本颜色定义 -->
     <color name="score_red">#EB5F5F</color>
