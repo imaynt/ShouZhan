@@ -146,17 +146,43 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
-
-        <!-- 手站登陆注册=============================================================== -->
+		
+		<!-- 手站登陆注册=============================================================== -->
         <!-- 手站注册手机验证类 -->
         <activity
             android:name=".activity.RegisterForPhoneActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustResize" />
-
-        <!-- 手站登陆注册=============================================================== -->
+            android:windowSoftInputMode="stateHidden|adjustResize" /> 
+            
+        <!-- 手站注册手机密码类 -->
+        <activity
+            android:name=".activity.RegisterForPwdActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> 
+            
+        <!-- 手站注册手机支付类 -->
+        <activity
+            android:name=".activity.RegisterForPayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> 
+            
+        
+        <!-- 点击弹窗 -->
+        <activity
+            android:name=".activity.RegisterBtnclickActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> 
+            
+      	<!-- 手站登陆注册=============================================================== -->
+		
     </application>
 
 </manifest>
