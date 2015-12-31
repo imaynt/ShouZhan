@@ -64,7 +64,17 @@
         <item name="android:layout_weight">1.0</item>
         <item name="android:singleLine">true</item>
     </style>
-
+    <!-- RadioButton的风格 -->
+    <style name="my_radiobutton">
+        <item name="android:textSize">@dimen/t_sixteen</item>
+        <item name="android:textColor">@drawable/tab_font_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/tab_order_bg</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
     <!-- 顶部返回栏 -->
     <style name="title_head">
         <item name="android:layout_width">wrap_content</item>

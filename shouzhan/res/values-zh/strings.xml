@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    
+
     <!-- 手站登陆注册===================================================================== -->
     <string name="lor_guest">游客体验</string>
     <string name="register_shouzhan">开通手站</string>
     <string name="login_shouzhan">登陆手站</string>
-    <string name="btn_back">返回</string>
-	<string name="comm_dialog_message">此号码已经注册过!</string>
+
     <!-- 手站登陆注册===================================================================== -->
 
 
@@ -23,13 +22,43 @@
     <string name="tab_guanli">管理</string>
     <string name="tab_erweima">二维码</string>
     <string name="my_shouzhan">我的手站</string>
-  
+
     <!-- 手站 -->
     <string name="shouye">首页</string>
     <string name="chanpin">产品</string>
     <string name="gongsi">公司</string>
     <string name="lianxi">联系</string>
-    <string name="yingwen">英文</string>
+    <string name="yingwen">EN</string>
+
+    <!-- 管理 -->
+    <string name="shoudianguanli">手店管理</string>
+    <string name="shangchuan">上传产品</string>
+    <string name="guanlichanpin">管理产品</string>
+    <string name="guanlifenlei">管理分类</string>
+    <string name="gongsijieshao">公司介绍</string>
+    <string name="lianxifangshi">联系方式</string>
+    <string name="mobanguanli">模板管理</string>
+    <string name="waiwenwangzhan">外文网站</string>
+    <string name="yaoqinghaoyou">邀请好友</string>
+    
+    <!-- 管理 联系方式 -->
+    <string name="mobile">手机</string>
+    <string name="telephone">固定电话</string>
+    <string name="contacts">联系人</string>
+    <string name="QQ">QQ</string>
+    <string name="weixin">微信</string>
+    <string name="other_url">其他网址</string>
+    <string name="in_area">所在地区</string>
+    <string name="details_address">详细地址</string>
+    <string name="submit">上传</string>
+    <string name="input_mobile">请输入手机号</string>
+    <string name="input_telephone">请输入电话号码</string>
+    <string name="input_contacts">请输入联系人</string>
+    <string name="input_qq">请输入QQ号</string>
+    <string name="input_weixin">请输入微信号</string>
+    <string name="input_url">请输入网站</string>
+    <string name="input_address">请输入详细地址</string>
+    
 
     <!-- 邀请好友 -->
     <string name="invite_friend">邀请好友</string>
@@ -39,7 +68,8 @@
     <string name="copy">复制</string>
 
     <!-- 更多 -->
-
+    <string name="load_data">正在加载,请稍候&#8230;</string>
+    <string name="positive">确定</string>
 
     <!-- 按钮上字符串 -->
     <string name="xlistview_header_hint_normal">下拉刷新</string>

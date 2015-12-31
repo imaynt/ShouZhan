@@ -1,54 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- æ‰‹ç«™ç™»é™†æ³¨å†Œ===================================================================== -->
-    <string name="lor_guest">æ¸¸å®¢ä½“éªŒ</string>
-    <string name="register_shouzhan">å¼€é€šæ‰‹ç«™</string>
-    <string name="register_pwd">å¯†ç è®¾ç½®</string>
-    <string name="login_shouzhan">ç™»é™†æ‰‹ç«™</string>
-    <string name="btn_back">è¿”å›ž</string>
-    <string name="shouzhan_xieyi"><u>æ‰‹ç«™ç”¨æˆ·åå®š</u></string>
-    <string name="comm_dialog_message">æ­¤å·ç å·²ç»æ³¨å†Œè¿‡!</string>
-    <string name="submit_again">å†æ¬¡å‘é€</string>
-    <!-- æ‰‹ç«™ç™»é™†æ³¨å†Œ===================================================================== -->
-    
-    <!-- ç‚¹å…¥çš„appkey -->
+    <!-- ÊÖÕ¾µÇÂ½×¢²á===================================================================== -->
+    <string name="lor_guest">ÓÎ¿ÍÌåÑé</string>
+    <string name="register_shouzhan">¿ªÍ¨ÊÖÕ¾</string>
+    <string name="login_shouzhan">µÇÂ½ÊÖÕ¾</string>
+
+    <!-- ÊÖÕ¾µÇÂ½×¢²á===================================================================== -->
+
+
+    <!-- µãÈëµÄappkey -->
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="app_key">0000B1422300006F</string>
-    <string name="app_name">æ‰‹ç«™</string>
-    <string name="app_content">æ‰‹ç«™æ˜¯ä¸€æ¬¾é¡¹ç›®</string>
+    <string name="app_name">ÊÖÕ¾</string>
+    <string name="app_content">ÊÖÕ¾ÊÇÒ»¿îÏîÄ¿</string>
 
     <!-- tab -->
-    <string name="tab_shouzhan">æ‰‹ç«™</string>
-    <string name="tab_shangchuan">ä¸Šä¼ </string>
-    <string name="tab_guanli">ç®¡ç†</string>
-    <string name="tab_erweima">äºŒç»´ç </string>
-    <string name="my_shouzhan">æˆ‘çš„æ‰‹ç«™</string>
-  
-    <!-- æ‰‹ç«™ -->
-    <string name="shouye">é¦–é¡µ</string>
-    <string name="chanpin">äº§å“</string>
-    <string name="gongsi">å…¬å¸</string>
-    <string name="lianxi">è”ç³»</string>
-    <string name="yingwen">è‹±æ–‡</string>
+    <string name="tab_shouzhan">ÊÖÕ¾</string>
+    <string name="tab_shangchuan">ÉÏ´«</string>
+    <string name="tab_guanli">¹ÜÀí</string>
+    <string name="tab_erweima">¶þÎ¬Âë</string>
+    <string name="my_shouzhan">ÎÒµÄÊÖÕ¾</string>
 
-    <!-- é‚€è¯·å¥½å‹ -->
-    <string name="invite_friend">é‚€è¯·å¥½å‹</string>
-    <string name="back">è¿”å›ž</string>
-    <string name="invite_content">é‚€è¯·å¥½å‹ä¹Ÿæ¥å¼€é€šæ‰‹ç«™å§~</string>
-    <string name="share">åˆ†äº«</string>
-    <string name="copy">å¤åˆ¶</string>
+    <!-- ÊÖÕ¾ -->
+    <string name="shouye">Ê×Ò³</string>
+    <string name="chanpin">²úÆ·</string>
+    <string name="gongsi">¹«Ë¾</string>
+    <string name="lianxi">ÁªÏµ</string>
+    <string name="yingwen">EN</string>
 
-    <!-- æ›´å¤š -->
+    <!-- ¹ÜÀí -->
+    <string name="shoudianguanli">ÊÖµê¹ÜÀí</string>
+    <string name="shangchuan">ÉÏ´«²úÆ·</string>
+    <string name="guanlichanpin">¹ÜÀí²úÆ·</string>
+    <string name="guanlifenlei">¹ÜÀí·ÖÀà</string>
+    <string name="gongsijieshao">¹«Ë¾½éÉÜ</string>
+    <string name="lianxifangshi">ÁªÏµ·½Ê½</string>
+    <string name="mobanguanli">Ä£°å¹ÜÀí</string>
+    <string name="waiwenwangzhan">ÍâÎÄÍøÕ¾</string>
+    <string name="yaoqinghaoyou">ÑûÇëºÃÓÑ</string>
+    
+    <!-- ¹ÜÀí ÁªÏµ·½Ê½ -->
+    <string name="mobile">ÊÖ»ú</string>
+    <string name="telephone">¹Ì¶¨µç»°</string>
+    <string name="contacts">ÁªÏµÈË</string>
+    <string name="QQ">QQ</string>
+    <string name="weixin">Î¢ÐÅ</string>
+    <string name="other_url">ÆäËûÍøÖ·</string>
+    <string name="in_area">ËùÔÚµØÇø</string>
+    <string name="details_address">ÏêÏ¸µØÖ·</string>
+    <string name="submit">ÉÏ´«</string>
+    <string name="input_mobile">ÇëÊäÈëÊÖ»úºÅ</string>
+    <string name="input_telephone">ÇëÊäÈëµç»°ºÅÂë</string>
+    <string name="input_contacts">ÇëÊäÈëÁªÏµÈË</string>
+    <string name="input_qq">ÇëÊäÈëQQºÅ</string>
+    <string name="input_weixin">ÇëÊäÈëÎ¢ÐÅºÅ</string>
+    <string name="input_url">ÇëÊäÈëÍøÕ¾</string>
+    <string name="input_address">ÇëÊäÈëÏêÏ¸µØÖ·</string>
+    
 
+    <!-- ÑûÇëºÃÓÑ -->
+    <string name="invite_friend">ÑûÇëºÃÓÑ</string>
+    <string name="back">·µ»Ø</string>
+    <string name="invite_content">ÑûÇëºÃÓÑÒ²À´¿ªÍ¨ÊÖÕ¾°É~</string>
+    <string name="share">·ÖÏí</string>
+    <string name="copy">¸´ÖÆ</string>
 
-    <!-- æŒ‰é’®ä¸Šå­—ç¬¦ä¸² -->
-    <string name="xlistview_header_hint_normal">ä¸‹æ‹‰åˆ·æ–°</string>
-    <string name="xlistview_header_hint_ready">æ¾å¼€åˆ·æ–°æ•°æ®</string>
-    <string name="xlistview_header_hint_loading">æ­£åœ¨åŠ è½½&#8230;</string>
-    <string name="xlistview_header_last_time">ä¸Šæ¬¡æ›´æ–°æ—¶é—´ï¼š</string>
-    <string name="xlistview_footer_hint_normal">æŸ¥çœ‹æ›´å¤š</string>
-    <string name="xlistview_footer_hint_ready">æ¾å¼€è½½å…¥æ›´å¤š</string>
+    <!-- ¸ü¶à -->
+    <string name="load_data">ÕýÔÚ¼ÓÔØ,ÇëÉÔºò&#8230;</string>
+    <string name="positive">È·¶¨</string>
+
+    <!-- °´Å¥ÉÏ×Ö·û´® -->
+    <string name="xlistview_header_hint_normal">ÏÂÀ­Ë¢ÐÂ</string>
+    <string name="xlistview_header_hint_ready">ËÉ¿ªË¢ÐÂÊý¾Ý</string>
+    <string name="xlistview_header_hint_loading">ÕýÔÚ¼ÓÔØ&#8230;</string>
+    <string name="xlistview_header_last_time">ÉÏ´Î¸üÐÂÊ±¼ä£º</string>
+    <string name="xlistview_footer_hint_normal">²é¿´¸ü¶à</string>
+    <string name="xlistview_footer_hint_ready">ËÉ¿ªÔØÈë¸ü¶à</string>
 
 </resources>

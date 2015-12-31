@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_index"
+    android:orientation="vertical" >
+
+    <com.zykj.shouzhan.view.MyCommonTitle
+        android:id="@+id/aci_mytitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/img_top"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/icon_index_top" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" >
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="2dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true" />
+
+                <LinearLayout
+                    android:id="@+id/ll_shouye"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/divider"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/yuan_index"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/icon_shouye" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="@string/shouye" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_chanpin"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_below="@id/divider"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_toLeftOf="@id/divider"
+                    android:background="@drawable/yuan_index"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/icon_chanpin" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="@string/chanpin" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_gongsi"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_below="@id/divider"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_toRightOf="@id/divider"
+                    android:background="@drawable/yuan_index"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/icon_gongsi" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="@string/gongsi" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_lianxi"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="220dp"
+                    android:layout_toLeftOf="@id/divider"
+                    android:background="@drawable/yuan_index"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/icon_telephone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="@string/lianxi" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_yingwen"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="220dp"
+                    android:layout_toRightOf="@id/divider"
+                    android:background="@drawable/yuan_index"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/icon_yingwen" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="@string/yingwen" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/img_change_model"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="40dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/icon_genghuanmoban"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

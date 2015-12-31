@@ -7,11 +7,6 @@
     <uses-sdk
         android:minSdkVersion="11"
         android:targetSdkVersion="21" />
-
-    <uses-permission android:name="android.permission.READ_CONTACTS" />
-    <uses-permission android:name="android.permission.RECEIVE_SMS" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    
     <!--  -->
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -63,8 +58,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-  
-
         <!-- 微信分享回调 -->
         <activity
             android:name=".wxapi.WXEntryActivity"
@@ -87,23 +80,33 @@
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-      
-        <!-- 主页索引 -->
+
+        <!-- 主页模板索引 -->
         <activity
-            android:name=".activity.IndexActivity"
+            android:name=".activity.IndexOneActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
-        
-        <!-- 邀请好友 -->
         <activity
-            android:name=".activity.InviteFriendActivity"
+            android:name=".activity.IndexTwoActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
-        
+        <activity
+            android:name=".activity.IndexThreeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.IndexFourActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
         <!-- 首页 -->
         <activity
             android:name=".activity.MainActivity"
@@ -111,42 +114,49 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
-        	
-		<!-- 手站登陆注册=============================================================== -->
+
+        <!-- 我的手站 -->
+        <activity
+            android:name=".activity.MyShouZhanActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- 管理联系方式 -->
+        <activity
+            android:name=".activity.ManageContactsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- 手店管理 -->
+        <activity
+            android:name=".activity.ShouDianManageActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- 邀请好友 -->
+        <activity
+            android:name=".activity.InviteFriendActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- 手站登陆注册=============================================================== -->
         <!-- 手站注册手机验证类 -->
         <activity
             android:name=".activity.RegisterForPhoneActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustResize" /> 
-            
-        <!-- 手站注册手机密码类 -->
-        <activity
-            android:name=".activity.RegisterForPwdActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustResize" /> 
-            
-        <!-- 手站注册手机支付类 -->
-        <activity
-            android:name=".activity.RegisterForPayActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustResize" /> 
-            
-        
-        <!-- 点击弹窗 -->
-        <activity
-            android:name=".activity.RegisterBtnclickActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustResize" /> 
-            
-      	<!-- 手站登陆注册=============================================================== -->
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- 手站登陆注册=============================================================== -->
     </application>
 
 </manifest>

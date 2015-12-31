@@ -11,7 +11,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class IndexActivity extends BaseActivity {
+public class IndexThreeActivity extends BaseActivity {
 
 	@Bind(R.id.aci_mytitle)
 	MyCommonTitle myCommonTitle;// ∂•≤ø±ÍÃ‚
@@ -32,7 +32,7 @@ public class IndexActivity extends BaseActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		setContentView(R.layout.ui_index_activity);
+		setContentView(R.layout.ui_index_three_activity);
 		ButterKnife.bind(this);
 
 		initView();
