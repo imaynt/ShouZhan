@@ -39,8 +39,8 @@ public class MainActivity extends BaseTabActivity {
 //		myCommonTitle=(MyCommonTitle) findViewById(R.id.aci_mytitle);
 //		myCommonTitle.setTitle(getString(R.string.my_shouzhan));
 		intent_1 = new Intent(this, IndexOneActivity.class);
-		intent_2 = new Intent(this, IndexTwoActivity.class);
-		intent_3 = new Intent(this, IndexThreeActivity.class);
+		intent_2 = new Intent(this, ManageContactsActivity.class);
+		intent_3 = new Intent(this, ShouDianManageActivity.class);
 		intent_4 = new Intent(this, IndexFourActivity.class);
 
 		m_tab.addTab(buildTagSpec("test1", 0, intent_1));
