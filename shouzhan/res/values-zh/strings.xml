@@ -5,7 +5,8 @@
     <string name="lor_guest">游客体验</string>
     <string name="register_shouzhan">开通手站</string>
     <string name="login_shouzhan">登陆手站</string>
-
+    <string name="btn_back">返回</string>
+	<string name="comm_dialog_message">此号码已经注册过!</string>
     <!-- 手站登陆注册===================================================================== -->
 
 

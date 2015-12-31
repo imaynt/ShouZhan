@@ -4,8 +4,12 @@
     <!-- 手站登陆注册===================================================================== -->
     <string name="lor_guest">游客体验</string>
     <string name="register_shouzhan">开通手站</string>
+    <string name="register_pwd">密码设置</string>
     <string name="login_shouzhan">登陆手站</string>
-    
+    <string name="btn_back">返回</string>
+    <string name="shouzhan_xieyi"><u>手站用户协定</u></string>
+    <string name="comm_dialog_message">此号码已经注册过!</string>
+    <string name="submit_again">再次发送</string>
     <!-- 手站登陆注册===================================================================== -->
     
     <!-- 点入的appkey -->

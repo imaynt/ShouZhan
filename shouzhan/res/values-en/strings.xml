@@ -5,7 +5,8 @@
     <string name="lor_guest">Guest</string>
     <string name="register_shouzhan">Register Shouzhan</string>
     <string name="login_shouzhan">Login Shouzhan</string>
-    
+    <string name="btn_back">back</string>
+    <string name="comm_dialog_message">此号码已经注册过!</string>
     <!-- 手站登陆注册===================================================================== -->
     
     <!-- 点入的appkey -->

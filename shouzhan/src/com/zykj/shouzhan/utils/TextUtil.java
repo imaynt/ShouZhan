@@ -48,7 +48,7 @@ public class TextUtil {
 	}
 	
 	/**
-	 * 密码长度合法性校验6-20位任意字符
+	 * 密码长度合法性校验6-16位任意字符
 	 * @param str
 	 * @return 验证通过返回true
 	 */
@@ -56,7 +56,7 @@ public class TextUtil {
 		Pattern p = null;
 		Matcher m = null;
 		boolean b = false;
-		p = Pattern.compile("^\\s*[^\\s\u4e00-\u9fa5]{6,20}\\s*$"); // 密码长度
+		p = Pattern.compile("^\\s*[^\\s\u4e00-\u9fa5]{6,16}\\s*$"); // 密码长度
 		m = p.matcher(str);
 		b = m.matches();
 		return b;
