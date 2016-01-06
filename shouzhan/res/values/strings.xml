@@ -9,7 +9,9 @@
 	<string name="comm_dialog_message">此号码已经注册过!</string>
 	<string name="shouzhan_xieyi"><u>手站用户协定</u></string>
 	<string name="register_pwd">设置密码</string>
-	
+	<!-- 手站登陆注册===================================================================== -->
+	<string name="login">登陆</string>
+	<string name="pwd_err_msg">密码与账号不匹配！</string>
     <!-- 手站登陆注册===================================================================== -->
 
 

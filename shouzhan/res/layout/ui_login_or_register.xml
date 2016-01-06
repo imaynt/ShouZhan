@@ -24,18 +24,8 @@
 	        android:layout_alignParentRight="true"
 	        android:layout_alignParentTop="true"
 	        android:layout_marginTop="16dp"
-	        android:src="@drawable/guest" />
-	    
-	    <TextView 
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:textColor="@color/white"
-	        android:layout_alignTop="@+id/iv_guest_background" 
-	        android:layout_alignParentRight="true"
-	        android:layout_marginRight="5dp"
-	        android:layout_marginTop="-2dp"
-	        android:textSize="16sp"
-	        android:text="@string/lor_guest"/>
+	        android:layout_marginRight="-12dp"
+	        android:src="@drawable/image_youke" />
 	    
 	</RelativeLayout>
 

@@ -5,13 +5,13 @@ import com.zykj.shouzhan.R;
 import com.zykj.shouzhan.utils.TextUtil;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -25,8 +25,8 @@ import cn.smssdk.SMSSDK;
 
 public class RegisterForPhoneActivity extends BaseActivity {
 	//常量
-	private static final String APPKEY = "df1b7b43b308";
-	private static final String APPSECRET = "9a8379ed3817518e83a1fd7b7db8738e";
+	private static final String APPKEY = "e42a07504680";
+	private static final String APPSECRET = "520ef34cacedf3702f17a9c22cf5602c";
 	private static final int 	TIME_INIT=60;		//初始化时间用
 	
 	private String phone_num="";			//手机号
@@ -35,6 +35,7 @@ public class RegisterForPhoneActivity extends BaseActivity {
 	
 	private boolean isPhone=false;			//是否为手机号
 	private boolean isCode=false;			//是否为验证码
+	private boolean isSelect=false;
 	
 	
 	Handler handler = new Handler(); 
@@ -49,9 +50,10 @@ public class RegisterForPhoneActivity extends BaseActivity {
 	@Bind(R.id.et_register_code)  	EditText       et_register_code;		//验证码输入框
 	@Bind(R.id.rl_register_click)	RelativeLayout rl_register_click;		//开通手站-手机验证-发送验证按钮
 	@Bind(R.id.rl_register_confirm)	RelativeLayout rl_register_confirm;		//开通手站-手机验证-验证确定按钮
-	@Bind(R.id.ll_edit_clear)		LinearLayout   ll_edit_clear;			//手机文本清除按钮
-	@Bind(R.id.ll_register_clickhide) 	   	LinearLayout   ll_register_clickhide;				//点击隐藏
-	@Bind(R.id.ll_register_clickshow) 	   	LinearLayout   ll_register_clickshow;				//点击显示
+	@Bind(R.id.ll_edit_clear)		ImageView   ll_edit_clear;			//手机文本清除按钮
+	@Bind(R.id.lv_select)			ImageView   lv_select;				//用户协定选中状态
+	@Bind(R.id.ll_register_clickhide) 	   	LinearLayout   ll_register_clickhide;		//点击隐藏
+	@Bind(R.id.ll_register_clickshow) 	   	LinearLayout   ll_register_clickshow;		//点击显示
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -129,6 +131,11 @@ public class RegisterForPhoneActivity extends BaseActivity {
 	@OnTextChanged(R.id.et_register_input)
 	public void etRegisterInputOnTextChanged(CharSequence s, int start, int before, int count) {
 		
+		 if(!et_register_input.getText().toString().equals(""))
+			 ll_edit_clear.setVisibility(View.VISIBLE);
+		 else
+			 ll_edit_clear.setVisibility(View.GONE);
+		
 		 if (s == null || s.length() == 0) return;
 	        StringBuilder sb = new StringBuilder();
 	        for (int i = 0; i < s.length(); i++) {
@@ -189,6 +196,10 @@ public class RegisterForPhoneActivity extends BaseActivity {
 	public void rlRegisterOnClick() {
 		if(!isPhone)
 			return;
+		if(!isSelect){
+			Toast.makeText(RegisterForPhoneActivity.this, "请阅读并同意手站用户协定！", Toast.LENGTH_SHORT).show();
+			return;
+		}
 		CommDialog myDialog = new CommDialog(RegisterForPhoneActivity.this, getWindowManager(),
 				getString(R.string.comm_dialog_message));
 		myDialog.show();
@@ -210,8 +221,8 @@ public class RegisterForPhoneActivity extends BaseActivity {
 		if(!isCode)
 			return;
 		SMSSDK.submitVerificationCode("86", phone_num, code);
-//		startActivity(new Intent(RegisterForPhoneActivity.this,RegisterForPwdActivity.class));
-//		overridePendingTransition(R.anim.default_fromright_in, R.anim.default_toleft_out);
+		startActivity(new Intent(RegisterForPhoneActivity.this,RegisterForPwdActivity.class));
+		overridePendingTransition(R.anim.default_fromright_in, R.anim.default_toleft_out);
 	}
 	
 	/**
@@ -253,6 +264,21 @@ public class RegisterForPhoneActivity extends BaseActivity {
 		time=TIME_INIT;
 		handler.postDelayed(runnable, 1000);
 		sendMessageCode();
+	}
+	
+	/**
+	 * 用户协定选中状态事件
+	 */
+	@OnClick(R.id.lv_select)
+	public void selectOnClick(){
+		if(isSelect){
+			lv_select.setImageResource(R.drawable.icon_gouxuan_normal);
+			isSelect = false;
+		}
+		else{
+			lv_select.setImageResource(R.drawable.icon_gouxuan_click);
+			isSelect = true;
+		}
 	}
 	
 	

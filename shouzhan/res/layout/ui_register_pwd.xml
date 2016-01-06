@@ -42,109 +42,92 @@
             android:text="3 支付年费>" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/ll_register_clickhide"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:layout_height="match_parent" >
 
         <LinearLayout
+            android:id="@+id/ll_register_clickhide"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/linearlayout_tb_line"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:paddingBottom="10dp"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:paddingTop="10dp" >
-
-            <EditText
-                android:id="@+id/et_register_pwd_first"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="8"
-                android:background="@null"
-                android:inputType="textPassword"
-                android:hint="请输入6-16位密码"
-                android:textSize="14sp" />
+            android:orientation="vertical" >
 
             <LinearLayout
-                android:id="@+id/ll_edit_pwd_o_clear"
-                android:layout_width="14dp"
-                android:layout_height="11dp"
-                android:layout_weight="2"
-                android:background="@drawable/register_circle_clear"
-                android:gravity="center" >
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/linearlayout_tb_line"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp" >
+
+                <EditText
+                    android:id="@+id/et_register_pwd_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:background="@null"
+                    android:hint="请输入6-16位密码"
+                    android:inputType="textPassword"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/ll_edit_pwd_o_clear"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/icon_qingchu_normal"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/linearlayout_tb_line"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp" >
+
+                <EditText
+                    android:id="@+id/et_register_pwd_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:background="@null"
+                    android:hint="请再次输入密码"
+                    android:inputType="textPassword"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/ll_edit_pwd_t_clear"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/icon_qingchu_normal"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_register_pwd_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@drawable/button_register_circle_gray"
+                android:gravity="center"
+                android:padding="10dp" >
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="-4dp"
-                    android:text="x"
-                    android:textColor="@color/white"
-                    android:textSize="12sp" >
-                </TextView>
-            </LinearLayout>
+                    android:text="确定"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/linearlayout_tb_line"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:paddingBottom="10dp"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:paddingTop="10dp" >
-
-            <EditText
-                android:id="@+id/et_register_pwd_two"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="8"
-                android:background="@null"
-                android:hint="请再次输入密码"
-                android:inputType="textPassword"
-                android:textSize="14sp" />
-
-            <LinearLayout
-                android:id="@+id/ll_edit_pwd_t_clear"
-                android:layout_width="14dp"
-                android:layout_height="11dp"
-                android:layout_weight="2"
-                android:background="@drawable/register_circle_clear"
-                android:gravity="center" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="-4dp"
-                    android:text="x"
-                    android:textColor="@color/white"
-                    android:textSize="12sp" >
-                </TextView>
-            </LinearLayout>
-        </LinearLayout>
-
-        <RelativeLayout
-            android:id="@+id/rl_register_pwd_click"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="12dp"
-            android:background="@drawable/button_register_circle_gray"
-            android:gravity="center"
-            android:padding="10dp" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="确定"
-                android:textColor="@color/white" />
-        </RelativeLayout>
-    </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

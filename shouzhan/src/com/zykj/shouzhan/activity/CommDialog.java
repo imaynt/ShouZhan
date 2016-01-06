@@ -5,6 +5,7 @@ import com.zykj.shouzhan.R;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.view.Display;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -68,7 +69,7 @@ public class CommDialog implements OnClickListener{
 		// TODO Auto-generated method stub
 		switch (view.getId()) {
 		case R.id.comm_dialog_confirm:
-			Toast.makeText(context, "you click confirm", Toast.LENGTH_SHORT).show();
+			context.startActivity(new Intent(context,LoginActivity.class));
 			break;
 		case R.id.comm_dialog_cancel:
 			this.dismiss();
