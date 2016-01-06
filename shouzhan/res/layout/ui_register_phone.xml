@@ -42,158 +42,168 @@
             android:text="3 支付年费>" />
     </LinearLayout>
 
-    <LinearLayout android:id="@+id/ll_register_clickhide"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" 
-        android:orientation="vertical" >
+        android:layout_height="match_parent" >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/linearlayout_tb_line"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:paddingBottom="10dp"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:paddingTop="10dp" >
-
-            <EditText
-                android:id="@+id/et_register_input"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="8"
-                android:background="@null"
-                android:maxLength="13"
-                android:hint="请输入您的手机号码"
-                android:textSize="14sp" />
+            android:orientation="vertical" >
 
             <LinearLayout
-                android:id="@+id/ll_edit_clear"
-                android:layout_width="14dp"
-                android:layout_height="11dp"
-                android:layout_weight="2"
-                android:background="@drawable/register_circle_clear"
-                android:gravity="center" >
+                android:id="@+id/ll_register_clickhide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="-4dp"
-                    android:text="x"
-                    android:textColor="@color/white"
-                    android:textSize="12sp" >
-                </TextView>
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/linearlayout_tb_line"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp" >
+
+                    <EditText
+                        android:id="@+id/et_register_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:background="@null"
+                        android:hint="请输入您的手机号码"
+                        android:maxLength="13"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/ll_edit_clear"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:src="@drawable/icon_qingchu_normal"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp" >
+
+                    <ImageView
+                        android:id="@+id/lv_select"
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@drawable/icon_gouxuan_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我已阅读并同意"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shouzhan_xieyi"
+                        android:textColor="@color/red"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_register_click"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/button_register_circle_gray"
+                    android:gravity="center"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发送验证"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_register_clickshow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/linearlayout_tb_line"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/et_register_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="请输入短信验证码"
+                        android:maxLength="4"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="10dp"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_register_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@color/dgrey"
+                        android:gravity="center"
+                        android:text="60s"
+                        android:textColor="@color/white" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tv_register_again"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@color/baby_red"
+                        android:gravity="center"
+                        android:text="再次发送"
+                        android:textColor="@color/white"
+                        android:visibility="gone" >
+                    </TextView>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_register_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/button_register_circle_gray"
+                    android:gravity="center"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="确定"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
             </LinearLayout>
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:orientation="horizontal"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我已阅读并同意"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/shouzhan_xieyi"
-                android:textColor="@color/red"
-                android:textSize="12sp" />
-        </LinearLayout>
-
-        <RelativeLayout
-            android:id="@+id/rl_register_click"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="12dp"
-            android:background="@drawable/button_register_circle_gray"
-            android:gravity="center"
-            android:padding="10dp" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="发送验证"
-                android:textColor="@color/white" />
-        </RelativeLayout>
-    </LinearLayout>
-
-    <LinearLayout 
-        android:id="@+id/ll_register_clickshow"
-        android:visibility="gone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" 
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/linearlayout_tb_line"
-            android:gravity="center"
-            android:orientation="horizontal" >
-
-            <EditText
-                android:id="@+id/et_register_code"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@null"
-                android:hint="请输入短信验证码"
-                android:maxLength="4"
-                android:paddingBottom="10dp"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:paddingTop="10dp"
-                android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/tv_register_time"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="3"
-                android:background="@color/dgrey"
-                android:gravity="center"
-                android:text="60s"
-                android:textColor="@color/white" >
-            </TextView>
-            <TextView
-                android:id="@+id/tv_register_again"
-                android:layout_width="match_parent"
-                android:visibility="gone"
-                android:layout_height="match_parent"
-                android:layout_weight="3"
-                android:background="@color/baby_red"
-                android:gravity="center"
-                android:text="再次发送"
-                android:textColor="@color/white" >
-            </TextView>
-        </LinearLayout>
-
-        <RelativeLayout
-            android:id="@+id/rl_register_confirm"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="12dp"
-            android:background="@drawable/button_register_circle_gray"
-            android:gravity="center"
-            android:padding="10dp" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="确定"
-                android:textColor="@color/white" />
-        </RelativeLayout>
-    </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

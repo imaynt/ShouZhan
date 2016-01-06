@@ -122,43 +122,6 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
-        <!-- 手店管理 -->
-        <activity
-            android:name=".activity.ShouDianManageActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustResize" />
-        <!-- 模板管理 -->
-        <activity
-            android:name=".activity.MoBanManageActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustResize" />
-        <!-- 手站管理-外文 -->
-        <activity
-            android:name=".activity.ShouZhanManageENActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustResize" />
-
-        <!-- 开通手站 -->
-        <activity
-            android:name=".activity.WaiWenNetActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustResize" />
-
-        <!-- 开通手站 -->
-        <activity
-            android:name=".activity.OpenShouZhanActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustResize" />
 
         <!-- 管理联系方式 -->
         <activity
@@ -168,9 +131,9 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
-        <!-- 二维码 -->
+        <!-- 手店管理 -->
         <activity
-            android:name=".activity.ErWeiMaActivity"
+            android:name=".activity.ShouDianManageActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
@@ -183,42 +146,58 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
-
-        <!-- 手站登陆注册=============================================================== -->
+		
+		<!-- 手站登陆注册=============================================================== -->
         <!-- 手站注册手机验证类 -->
         <activity
             android:name=".activity.RegisterForPhoneActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustResize" />
-
+            android:windowSoftInputMode="stateHidden|adjustResize" /> 
+            
         <!-- 手站注册手机密码类 -->
         <activity
             android:name=".activity.RegisterForPwdActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustResize" />
-
+            android:windowSoftInputMode="stateHidden|adjustResize" /> 
+            
         <!-- 手站注册手机支付类 -->
         <activity
             android:name=".activity.RegisterForPayActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustResize" />
-
+            android:windowSoftInputMode="stateHidden|adjustResize" /> 
+            
+        
         <!-- 点击弹窗 -->
         <activity
             android:name=".activity.RegisterBtnclickActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustResize" />
-
-        <!-- 手站登陆注册=============================================================== -->
-
+            android:windowSoftInputMode="stateHidden|adjustResize" /> 
+            
+      	<!-- 手站登陆注册=============================================================== -->
+      	<!-- 手站登陆注册=============================================================== -->
+      	<!-- 登陆页面 -->
+        <activity
+            android:name=".activity.LoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> 
+        <!-- 登陆页面-修改密码发送验证码 -->
+        <activity
+            android:name=".activity.LoginForNumberActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> 
+		
     </application>
 
 </manifest>

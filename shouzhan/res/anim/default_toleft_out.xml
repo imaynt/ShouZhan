@@ -3,7 +3,7 @@
     android:shareInterpolator="false" >
 
     <translate
-        android:duration="500"
+        android:duration="250"
         android:fillAfter="true"
         android:fromXDelta="0"
         android:fromYDelta="0"

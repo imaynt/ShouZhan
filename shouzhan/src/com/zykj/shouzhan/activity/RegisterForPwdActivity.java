@@ -6,7 +6,9 @@ import com.zykj.shouzhan.utils.TextUtil;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -21,12 +23,13 @@ public class RegisterForPwdActivity extends BaseActivity {
 	
 	private boolean isUsed = false;
 
-	@Bind(R.id.rl_register_pwd_click) 	RelativeLayout    rl_register_pwd_click;		//密码设置-确定按钮
-	@Bind(R.id.et_register_pwd_first)	EditText	      et_register_pwd_first;		//第一次输入密码
-	@Bind(R.id.et_register_pwd_two)		EditText		  et_register_pwd_two;			//第二次输入密码
-	@Bind(R.id.aci_title_textview) 		TextView 	   	  aci_title_textview;			//顶部标题栏显示
-	@Bind(R.id.ll_edit_pwd_t_clear)		LinearLayout	  ll_edit_pwd_t_clear;			//第二个输入框叉号
-	@Bind(R.id.ll_edit_pwd_o_clear)		LinearLayout	  ll_edit_pwd_o_clear;			//第一个输入框叉号
+	@Bind(R.id.rl_register_pwd_click) 	RelativeLayout rl_register_pwd_click;		//密码设置-确定按钮
+	@Bind(R.id.et_register_pwd_first)	EditText	   et_register_pwd_first;		//第一次输入密码
+	@Bind(R.id.et_register_pwd_two)		EditText	   et_register_pwd_two;			//第二次输入密码
+	@Bind(R.id.aci_title_textview) 		TextView 	   aci_title_textview;			//顶部标题栏显示
+	@Bind(R.id.ll_back_btn) 	   		LinearLayout   ll_back_btn;					//顶部标题栏返回按钮
+	@Bind(R.id.ll_edit_pwd_t_clear)		ImageView	   ll_edit_pwd_t_clear;			//第二个输入框叉号
+	@Bind(R.id.ll_edit_pwd_o_clear)		ImageView	   ll_edit_pwd_o_clear;			//第一个输入框叉号
 	
 
 	@Override
@@ -52,6 +55,14 @@ public class RegisterForPwdActivity extends BaseActivity {
 		else
 			Toast.makeText(RegisterForPwdActivity.this, "两次密码输入不一致，请重新输入", Toast.LENGTH_SHORT).show();
 	}
+	
+	/**
+	 * 顶部标题栏返回按钮点击事件
+	 */
+	@OnClick(R.id.ll_back_btn)
+	public void llBackBtnOnClick() {
+		this.finish();
+	}
 
 	/**
 	 * 当第一个输入框失去焦点时，判断密码是否合法
@@ -65,10 +76,28 @@ public class RegisterForPwdActivity extends BaseActivity {
 	}
 	
 	/**
+	 * 当第一个输入框输入密码时，启用确定按钮
+	 */
+	@OnTextChanged(R.id.et_register_pwd_first)
+	public void registerPwdOChanged(){
+		
+		if(!et_register_pwd_first.getText().toString().equals(""))
+			ll_edit_pwd_o_clear.setVisibility(View.VISIBLE);
+		 else
+			 ll_edit_pwd_o_clear.setVisibility(View.GONE);
+	}
+	
+	/**
 	 * 当第二个输入框输入密码时，启用确定按钮
 	 */
 	@OnTextChanged(R.id.et_register_pwd_two)
 	public void registerPwdTChanged(){
+		
+		if(!et_register_pwd_two.getText().toString().equals(""))
+			ll_edit_pwd_t_clear.setVisibility(View.VISIBLE);
+		 else
+			 ll_edit_pwd_t_clear.setVisibility(View.GONE);
+		
 		if(et_register_pwd_two.getText().toString().equals("")){
 			isUsed = false;
 			rl_register_pwd_click.setBackgroundResource(R.drawable.button_register_circle_gray);
