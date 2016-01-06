@@ -6,7 +6,7 @@
     <string name="register_shouzhan">开通手站</string>
     <string name="login_shouzhan">登陆手站</string>
     <string name="btn_back">返回</string>
-	<string name="comm_dialog_message">此号码已经注册过!</string>
+    <string name="comm_dialog_message">此号码已经注册过!</string>
     <!-- 手站登陆注册===================================================================== -->
 
 
@@ -41,7 +41,7 @@
     <string name="mobanguanli">模板管理</string>
     <string name="waiwenwangzhan">外文网站</string>
     <string name="yaoqinghaoyou">邀请好友</string>
-    
+
     <!-- 管理 联系方式 -->
     <string name="mobile">手机</string>
     <string name="telephone">固定电话</string>
@@ -59,14 +59,33 @@
     <string name="input_weixin">请输入微信号</string>
     <string name="input_url">请输入网站</string>
     <string name="input_address">请输入详细地址</string>
-    
 
+        <!-- 模板管理 -->
+    <string name="moban_manage">模板管理</string>
+    <string name="button_style">按钮样式</string>
+    <string name="background_pic">背景图片</string>
+    
+    <!-- 开通手站 -->
+    <string name="open_content">成功开通：ENHLISH版手站</string>
+    <string name="open_content_info">目前只支持开通一种外文</string>
+    <string name="manage_en_net">去管理外文网站</string>
+    <string name="open_shouzhan">开通手站</string>
+    <string name="language_manage">语种管理</string>
+    <string name="cn_manage">中文管理</string>
+    <string name="shouzhan_manage">手站管理-外文</string>
+    <string name="waiwen_net">外文网站</string>
+    <string name="select_language">选择要开通的语种</string>
+    <string name="pull_table">下拉列表框</string>
+    
+    
     <!-- 邀请好友 -->
     <string name="invite_friend">邀请好友</string>
+    <string name="erweima">二维码</string>
     <string name="back">返回</string>
     <string name="invite_content">邀请好友也来开通手站吧~</string>
     <string name="share">分享</string>
     <string name="copy">复制</string>
+    <string name="download">下载</string>
 
     <!-- 更多 -->
     <string name="load_data">正在加载,请稍候&#8230;</string>

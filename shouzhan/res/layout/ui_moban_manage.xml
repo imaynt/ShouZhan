@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_index"
+    android:orientation="vertical" >
+
+    <com.zykj.shouzhan.view.MyCommonTitle
+        android:id="@+id/aci_mytitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_button_style"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/icon_button_style" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="@string/button_style"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/icon_zhankai_norma" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_background_pic"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/icon_bg_pic" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="@string/background_pic"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/icon_zhankai_norma" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

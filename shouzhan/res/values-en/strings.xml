@@ -34,6 +34,7 @@
     <!-- 管理 -->
     <string name="shoudianguanli">ShouDian Manage</string>
     <string name="shangchuan">Submit Product</string>
+    <string name="guanlichanpin">Manage Product</string>
     <string name="guanlifenlei">Manage Sort</string>
     <string name="gongsijieshao">Company Intro</string>
     <string name="lianxifangshi">Contact Style</string>
@@ -59,12 +60,31 @@
     <string name="input_url">Please Input Url</string>
     <string name="input_address">Please Input Address</string>
 
+    <!-- 模板管理 -->
+    <string name="moban_manage">Model Manage</string>
+    <string name="button_style">Button Style</string>
+    <string name="background_pic">Background Picture</string>
+
+    <!-- 开通手站 -->
+    <string name="open_content">Open sucessfull：ShouZhan in english</string>
+    <string name="open_content_info">Only support for only one foreign language at present目前只支持开通一种外文</string>
+    <string name="manage_en_net">Manage EN Net</string>
+    <string name="open_shouzhan">Open ShouZhan</string>
+    <string name="language_manage">Language Manage</string>
+    <string name="cn_manage">Chinese Manage</string>
+    <string name="shouzhan_manage">ShouZhan Manage-ENGLISH</string>
+    <string name="waiwen_net">EN NET</string>
+    <string name="select_language">Select Language</string>
+       <string name="pull_table">Drop down list box </string>
+
     <!-- 邀请好友 -->
     <string name="invite_friend">Invite friend</string>
+    <string name="erweima">Two Code</string>
     <string name="back">Back</string>
     <string name="invite_content">Invite your friends to open your ShouZhan~</string>
     <string name="share">Share</string>
     <string name="copy">Copy</string>
+    <string name="download">DownLoad</string>
 
     <!-- 按钮上字符串 -->
     <string name="xlistview_header_hint_normal">下拉刷新</string>

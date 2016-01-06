@@ -53,7 +53,7 @@
 			Pocket         http://getpocket.com/developer/apps/new
     -->
 
-    <ShareSDK AppKey="df1a771167de" />
+    <ShareSDK AppKey="e3d8e7ea3222" />
     <!-- 修改成你在sharesdk后台注册的应用的appkey" -->
     <!--
     	Wechat微信和WechatMoments微信朋友圈的appid是一样的；

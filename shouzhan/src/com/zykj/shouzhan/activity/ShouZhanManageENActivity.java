@@ -11,10 +11,12 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class ShouDianManageActivity extends BaseActivity {
+public class ShouZhanManageENActivity extends BaseActivity {
 
 	@Bind(R.id.aci_mytitle)
 	MyCommonTitle myCommonTitle;
+	@Bind(R.id.ll_language_manage)
+	LinearLayout ll_language_manage;
 	@Bind(R.id.ll_shangchuan)
 	LinearLayout ll_shangchuan;
 	@Bind(R.id.ll_guanlichanpin)
@@ -25,30 +27,34 @@ public class ShouDianManageActivity extends BaseActivity {
 	LinearLayout ll_gongsijieshao;
 	@Bind(R.id.ll_lianxifangshi)
 	LinearLayout ll_lianxifangshi;
-	@Bind(R.id.ll_mobanguanli)
-	LinearLayout ll_mobanguanli;
-	@Bind(R.id.ll_waiwenwangzhan)
-	LinearLayout ll_waiwenwangzhan;
-	@Bind(R.id.ll_yaoqinghaoyou)
-	LinearLayout ll_yaoqinghaoyou;
+	@Bind(R.id.ll_cn_manage)
+	LinearLayout ll_cn_manage;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.ui_shoudian_manage);
+		setContentView(R.layout.ui_shouzhan_manage_en);
 		ButterKnife.bind(this);
 
 		initView();
 	}
 
 	private void initView() {
-		myCommonTitle.setTitle(getString(R.string.shoudianguanli));
+		myCommonTitle.setTitle(getString(R.string.shouzhan_manage));
 		myCommonTitle.setListener(this, null, null);
 		myCommonTitle.setBackTitle(getString(R.string.back));
 	}
 
 	/**
-	 * \ 上传产品
+	 * 语种管理
+	 */
+	@OnClick(R.id.ll_language_manage)
+	public void languageManage() {
+		startActivity(new Intent(ShouZhanManageENActivity.this, WaiWenNetActivity.class));
+	}
+
+	/**
+	 * 上传产品
 	 */
 	@OnClick(R.id.ll_shangchuan)
 	public void shangChuanChanPin() {
@@ -56,7 +62,7 @@ public class ShouDianManageActivity extends BaseActivity {
 	}
 
 	/**
-	 * \ 管理产品
+	 * 管理产品
 	 */
 	@OnClick(R.id.ll_guanlichanpin)
 	public void guanLiChanPin() {
@@ -64,7 +70,7 @@ public class ShouDianManageActivity extends BaseActivity {
 	}
 
 	/**
-	 * \ 管理分类
+	 * 管理分类
 	 */
 	@OnClick(R.id.ll_guanlifenlei)
 	public void guanLiFenLei() {
@@ -72,7 +78,7 @@ public class ShouDianManageActivity extends BaseActivity {
 	}
 
 	/**
-	 * \ 公司介绍
+	 * 公司介绍
 	 */
 	@OnClick(R.id.ll_gongsijieshao)
 	public void gongSiJieShao() {
@@ -80,7 +86,7 @@ public class ShouDianManageActivity extends BaseActivity {
 	}
 
 	/**
-	 * \ 联系方式
+	 * 联系方式
 	 */
 	@OnClick(R.id.ll_lianxifangshi)
 	public void lianXiFangShi() {
@@ -88,29 +94,12 @@ public class ShouDianManageActivity extends BaseActivity {
 	}
 
 	/**
-	 * \ 模板管理
+	 * 中文管理
 	 */
-	@OnClick(R.id.ll_mobanguanli)
-	public void moBanGuanLi() {
-		startActivity(new Intent(ShouDianManageActivity.this, MoBanManageActivity.class));
+	@OnClick(R.id.ll_cn_manage)
+	public void chineseGuanLi() {
+		startActivity(new Intent(ShouZhanManageENActivity.this, ShouDianManageActivity.class));
 		finish();
-	}
-
-	/**
-	 * \ 外文网站
-	 */
-	@OnClick(R.id.ll_waiwenwangzhan)
-	public void waiWenWangZhan() {
-		startActivity(new Intent(ShouDianManageActivity.this, WaiWenNetActivity.class));
-		finish();
-	}
-
-	/**
-	 * \ 邀请好友
-	 */
-	@OnClick(R.id.ll_yaoqinghaoyou)
-	public void yaoQingHaoYou() {
-		startActivity(new Intent(ShouDianManageActivity.this, InviteFriendActivity.class));
 	}
 
 }
