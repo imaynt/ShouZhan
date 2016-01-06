@@ -49,6 +49,7 @@
     
     <!-- 管理 联系方式 -->
     <string name="mobile">手机</string>
+    <string name="mobile2">手机：</string>
     <string name="telephone">固定电话</string>
     <string name="contacts">联系人</string>
     <string name="QQ">QQ</string>

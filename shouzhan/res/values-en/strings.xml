@@ -44,6 +44,7 @@
 
     <!-- 管理 联系方式 -->
     <string name="mobile">Mobile</string>
+    <string name="mobile2">Mobile：</string>
     <string name="telephone">Telephone</string>
     <string name="contacts">Contacts</string>
     <string name="QQ">QQ</string>

@@ -66,7 +66,6 @@ public class CommDialog implements OnClickListener{
 
 	@Override
 	public void onClick(View view) {
-		// TODO Auto-generated method stub
 		switch (view.getId()) {
 		case R.id.comm_dialog_confirm:
 			context.startActivity(new Intent(context,LoginActivity.class));
