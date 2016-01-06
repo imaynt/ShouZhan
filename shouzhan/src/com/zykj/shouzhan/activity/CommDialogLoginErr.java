@@ -13,7 +13,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class CommDialogPwdErr  implements OnClickListener{
+public class CommDialogLoginErr implements OnClickListener{
 	Context context;
 	Dialog dialog;
 	WindowManager windowManager; 
@@ -29,11 +29,11 @@ public class CommDialogPwdErr  implements OnClickListener{
 	 * 
 	 * @return
 	 */
-	public CommDialogPwdErr(Context con,WindowManager wm,String message,String phone) {
+	public CommDialogLoginErr(Context con,WindowManager wm,String message) {
 		this.context = con; 
 		windowManager = wm;
 		dialog = new Dialog(context, R.style.dialog); 
-		dialog.setContentView(R.layout.comm_dialog_pwderr); 
+		dialog.setContentView(R.layout.comm_dialog_loginerr); 
 		comm_dialog_message=(TextView) dialog.findViewById(R.id.comm_dialog_message);
 		comm_dialog_cancel =(Button) dialog.findViewById(R.id.comm_dialog_cancel);
 		comm_dialog_confirm =(Button) dialog.findViewById(R.id.comm_dialog_confirm);
@@ -64,7 +64,7 @@ public class CommDialogPwdErr  implements OnClickListener{
 		// TODO Auto-generated method stub
 		switch (view.getId()) {
 		case R.id.comm_dialog_confirm:
-			context.startActivity(new Intent(context,LoginForNumberActivity.class));
+			context.startActivity(new Intent(context,RegisterForPhoneActivity.class));
 			break;
 		case R.id.comm_dialog_cancel:
 			this.dismiss();

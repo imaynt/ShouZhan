@@ -97,12 +97,12 @@ public class RegisterForPhoneActivity extends BaseActivity {
 					// 回调完成
 					if (event == SMSSDK.EVENT_SUBMIT_VERIFICATION_CODE) {
 						// 提交验证码成功
-						Toast.makeText(RegisterForPhoneActivity.this, "提交验证码成功", Toast.LENGTH_SHORT).show();
+						Toast.makeText(RegisterForPhoneActivity.this, getString(R.string.submit_code_success), Toast.LENGTH_SHORT).show();
 						startActivity(new Intent(RegisterForPhoneActivity.this,RegisterForPwdActivity.class));
 						overridePendingTransition(R.anim.default_fromright_in, R.anim.default_toleft_out);
 					} else if (event == SMSSDK.EVENT_GET_VERIFICATION_CODE) {
 						// 获取验证码成功
-						Toast.makeText(RegisterForPhoneActivity.this, "获取验证码成功", Toast.LENGTH_SHORT).show();
+						Toast.makeText(RegisterForPhoneActivity.this, getString(R.string.get_code_success), Toast.LENGTH_SHORT).show();
 					} else if (event == SMSSDK.EVENT_GET_SUPPORTED_COUNTRIES) {
 						// 返回支持发送验证码的国家列表
 					}
@@ -111,7 +111,7 @@ public class RegisterForPhoneActivity extends BaseActivity {
 			} else {
 				((Throwable) data).printStackTrace();
 				Toast.makeText(RegisterForPhoneActivity.this,
-						event == SMSSDK.EVENT_GET_VERIFICATION_CODE ? "验证码频繁，请稍后再试！" : "验证码错误",Toast.LENGTH_SHORT).show();
+						event == SMSSDK.EVENT_GET_VERIFICATION_CODE ? getString(R.string.code_busy) : getString(R.string.code_error),Toast.LENGTH_SHORT).show();
 			}
 		}
 	};
@@ -197,7 +197,7 @@ public class RegisterForPhoneActivity extends BaseActivity {
 		if(!isPhone)
 			return;
 		if(!isSelect){
-			Toast.makeText(RegisterForPhoneActivity.this, "请阅读并同意手站用户协定！", Toast.LENGTH_SHORT).show();
+			Toast.makeText(RegisterForPhoneActivity.this, getString(R.string.please_read), Toast.LENGTH_SHORT).show();
 			return;
 		}
 		CommDialog myDialog = new CommDialog(RegisterForPhoneActivity.this, getWindowManager(),
@@ -205,7 +205,7 @@ public class RegisterForPhoneActivity extends BaseActivity {
 		myDialog.show();
 		
 		//发送验证
-		sendMessageCode();
+//		sendMessageCode();
 		
 		ll_register_clickhide.setVisibility(View.GONE);
 		ll_register_clickshow.setVisibility(View.VISIBLE);
@@ -220,7 +220,7 @@ public class RegisterForPhoneActivity extends BaseActivity {
 	public void rlRegisterConfirmOnClick() {
 		if(!isCode)
 			return;
-		SMSSDK.submitVerificationCode("86", phone_num, code);
+//		SMSSDK.submitVerificationCode("86", phone_num, code);
 		startActivity(new Intent(RegisterForPhoneActivity.this,RegisterForPwdActivity.class));
 		overridePendingTransition(R.anim.default_fromright_in, R.anim.default_toleft_out);
 	}

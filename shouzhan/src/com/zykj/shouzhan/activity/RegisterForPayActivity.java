@@ -165,8 +165,8 @@ public class RegisterForPayActivity extends BaseActivity {
 	 */
 	@OnClick(R.id.rl_register_pay_queding)
 	public void registerPayOnClick(){
-		payName = whoSelected.equals("ali")?"支付宝":(whoSelected.equals("card")?"银行卡":"微信");
-		tv_pay_success.setText(payName+"支付成功");
+//		payName = whoSelected.equals("ali")?"支付宝":(whoSelected.equals("card")?"银行卡":"微信");
+//		tv_pay_success.setText(payName+"支付成功");
 		
 		ll_pay_online.setVisibility(View.GONE);
 		ll_register_clickhide.setVisibility(View.GONE);
