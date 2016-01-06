@@ -24,14 +24,14 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="left"
-            android:text="1 手机验证>" />
+            android:text="@string/phone_check" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="2 密码设置>"
+            android:text="@string/pwd_set"
             android:textColor="@color/red" />
 
         <TextView
@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="right"
-            android:text="3 支付年费>" />
+            android:text="@string/pay_years" />
     </LinearLayout>
 
     <ScrollView
@@ -70,7 +70,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
                     android:background="@null"
-                    android:hint="请输入6-16位密码"
+                    android:hint="@string/input_pwd"
                     android:inputType="textPassword"
                     android:textSize="14sp" />
 
@@ -100,7 +100,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
                     android:background="@null"
-                    android:hint="请再次输入密码"
+                    android:hint="@string/input_pwd_again"
                     android:inputType="textPassword"
                     android:textSize="14sp" />
 
@@ -124,7 +124,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="确定"
+                    android:text="@string/confirm"
                     android:textColor="@color/white" />
             </RelativeLayout>
         </LinearLayout>

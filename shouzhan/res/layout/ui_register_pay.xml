@@ -24,21 +24,21 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="left"
-            android:text="1 手机验证>" />
+            android:text="@string/phone_check" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="2 密码设置>" />
+            android:text="@string/pwd_set" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="right"
-            android:text="3 支付年费>"
+            android:text="@string/pay_years"
             android:textColor="@color/red" />
     </LinearLayout>
 
@@ -68,7 +68,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="一次最多开通 3 年" />
+                        android:text="@string/more_three_years" />
                 </LinearLayout>
 
                 <RelativeLayout
@@ -87,7 +87,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="left"
-                        android:text="手站年费" >
+                        android:text="@string/shouzhan_years" >
                     </TextView>
 
                     <TextView
@@ -112,7 +112,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="left"
-                        android:text="开通年数：" >
+                        android:text="@string/open_years" >
                     </TextView>
 
                     <LinearLayout
@@ -165,7 +165,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="left"
-                        android:text="订单总价：" >
+                        android:text="@string/money_add" >
                     </TextView>
 
                     <TextView
@@ -195,7 +195,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="在线支付年费"
+                            android:text="@string/online_pay"
                             android:textColor="@color/white" />
                     </RelativeLayout>
 
@@ -212,7 +212,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="预约专员上门"
+                            android:text="@string/people_pay"
                             android:textColor="@color/baby_red" />
                     </RelativeLayout>
                 </LinearLayout>
@@ -241,14 +241,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="left"
-                        android:text="订单名称" >
+                        android:text="@string/confirm_name" >
                     </TextView>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="right"
-                        android:text="手站年服务费用" />
+                        android:text="@string/confirm_name_msg" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -266,7 +266,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="left"
-                        android:text="订购年数" >
+                        android:text="@string/confirm_years" >
                     </TextView>
 
                     <TextView
@@ -292,7 +292,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="left"
-                        android:text="订单总价：" >
+                        android:text="@string/confirm_price" >
                     </TextView>
 
                     <TextView
@@ -334,7 +334,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="3dp"
                         android:layout_toRightOf="@+id/iv_card_pay"
-                        android:text="银行卡支付"
+                        android:text="@string/card_pay"
                         android:textSize="16sp" />
 
                     <TextView
@@ -343,7 +343,7 @@
                         android:layout_below="@+id/tv_card_pay"
                         android:layout_marginTop="3dp"
                         android:layout_toRightOf="@+id/iv_card_pay"
-                        android:text="支持储蓄卡信用卡，无需开通网..."
+                        android:text="@string/card_pay_msg"
                         android:textColor="@color/gray"
                         android:textSize="14sp" />
 
@@ -381,7 +381,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="3dp"
                         android:layout_toRightOf="@+id/iv_wechat_pay"
-                        android:text="微信支付"
+                        android:text="@string/wechat_pay"
                         android:textSize="16sp" />
 
                     <TextView
@@ -390,7 +390,7 @@
                         android:layout_below="@+id/tv_wechat_pay"
                         android:layout_marginTop="3dp"
                         android:layout_toRightOf="@+id/iv_wechat_pay"
-                        android:text="推荐安装微信5.0及以上版本的使用"
+                        android:text="@string/wechat_pay_msg"
                         android:textColor="@color/gray"
                         android:textSize="14sp" />
 
@@ -427,7 +427,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="3dp"
                         android:layout_toRightOf="@+id/iv_ali_pay"
-                        android:text="支付宝支付"
+                        android:text="@string/ali_pay"
                         android:textSize="16sp" />
 
                     <TextView
@@ -436,7 +436,7 @@
                         android:layout_below="@+id/tv_ali_pay"
                         android:layout_marginTop="3dp"
                         android:layout_toRightOf="@+id/iv_ali_pay"
-                        android:text="推荐有支付宝账号的用户使用"
+                        android:text="@string/ali_pay_msg"
                         android:textColor="@color/gray"
                         android:textSize="14sp" />
 
@@ -468,7 +468,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="确定"
+                            android:text="@string/confirm"
                             android:textColor="@color/white" />
                     </RelativeLayout>
                 </LinearLayout>
@@ -492,7 +492,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="预约专员上门收费" />
+                        android:text="@string/people_pay_msg" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -511,7 +511,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="15dp"
-                        android:text="姓名 ： 王小二"
+                        android:text="@string/people_name"
                         android:textColor="@color/gray"
                         android:textSize="12sp" >
                     </TextView>
@@ -520,7 +520,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="15dp"
-                        android:text="移动电话 ： 18888888876"
+                        android:text="@string/people_mobile"
                         android:textColor="@color/gray"
                         android:textSize="12sp" >
                     </TextView>
@@ -529,7 +529,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="15dp"
-                        android:text="座机 ： 400-88-99转12"
+                        android:text="@string/people_phone"
                         android:textColor="@color/gray"
                         android:textSize="12sp" >
                     </TextView>
@@ -538,7 +538,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="15dp"
-                        android:text="QQ ： 86689656"
+                        android:text="@string/people_qq"
                         android:textColor="@color/gray"
                         android:textSize="12sp" >
                     </TextView>
@@ -546,7 +546,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="工作时间 ： 周一至周五         8：00——18：00"
+                        android:text="@string/people_work"
                         android:textColor="@color/gray"
                         android:textSize="12sp" >
                     </TextView>
@@ -570,7 +570,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="重新选择支付方式"
+                            android:text="@string/reselect_pay"
                             android:textColor="@color/white" />
                     </RelativeLayout>
                 </LinearLayout>
@@ -613,7 +613,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="3dp"
-                            android:text="支付成功"
+                            android:text="@string/success_pay"
                             android:textColor="@color/black"
                             android:textSize="18sp" >
                         </TextView>
@@ -624,7 +624,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="20dp"
                         android:gravity="center"
-                        android:text="手站已开通，现在可以"
+                        android:text="@string/success_pay_msg"
                         android:textColor="@color/gray"
                         android:textSize="12sp" >
                     </TextView>
@@ -648,7 +648,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="管理手站"
+                            android:text="@string/manager_shouzhan"
                             android:textColor="@color/white" />
                     </RelativeLayout>
                 </LinearLayout>
@@ -668,7 +668,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="客服电话：400-888-888"
+                        android:text="@string/service_phone"
                         android:textColor="@color/gray" />
                 </LinearLayout>
             </LinearLayout>

@@ -4,6 +4,7 @@ import com.zykj.shouzhan.BaseActivity;
 import com.zykj.shouzhan.R;
 import com.zykj.shouzhan.utils.TextUtil;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -30,6 +31,7 @@ public class LoginActivity extends BaseActivity {
 	@Bind(R.id.ll_back_btn) 	   	LinearLayout   ll_back_btn;				//顶部标题栏返回按钮
 	@Bind(R.id.ll_edit_pwd_t_clear)	ImageView	   ll_edit_pwd_t_clear;		//第二个输入框叉号
 	@Bind(R.id.ll_edit_pwd_o_clear)	ImageView	   ll_edit_pwd_o_clear;		//第一个输入框叉号
+	@Bind(R.id.tv_forget_pwd) 		TextView 	   tv_forget_pwd;			//忘记密码
 	
 
 	@Override
@@ -38,6 +40,14 @@ public class LoginActivity extends BaseActivity {
 		setContentView(R.layout.ui_login);
 		ButterKnife.bind(this);// 绑定第三方
 		aci_title_textview.setText(R.string.login);
+	}
+	
+	/**
+	 * 忘记密码点击事件
+	 */
+	@OnClick(R.id.tv_forget_pwd)
+	public void forgetPwdOnClick(){
+		startActivity(new Intent(LoginActivity.this,LoginForNumberActivity.class));
 	}
 	
 	/**

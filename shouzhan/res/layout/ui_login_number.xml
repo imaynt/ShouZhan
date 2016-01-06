@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="left"
-            android:text="1 手机验证>"
+            android:text="@string/phone_check"
             android:textColor="@color/red" />
 
         <TextView
@@ -32,21 +32,76 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="2 密码重置>" />
+            android:text="@string/pwd_set_login" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="right"
-            android:text="3 支付年费>"
+            android:text="@string/pay_years"
             android:visibility="invisible" />
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/ll_login_clickhide"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/linearlayout_tb_line"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp" >
+
+            <EditText
+                android:id="@+id/et_login_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:background="@null"
+                android:hint="@string/input_register_phone"
+                android:maxLength="13"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/ll_edit_clear"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/icon_qingchu_normal"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_login_click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/button_register_circle_gray"
+            android:gravity="center"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send_check"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_login_clickshow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -62,7 +117,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@null"
-                android:hint="请输入短信验证码"
+                android:hint="@string/input_code_msg"
                 android:maxLength="4"
                 android:paddingBottom="10dp"
                 android:paddingLeft="15dp"
@@ -88,7 +143,7 @@
                 android:layout_weight="3"
                 android:background="@color/baby_red"
                 android:gravity="center"
-                android:text="再次发送"
+                android:text="@string/send_again"
                 android:textColor="@color/white"
                 android:visibility="gone" >
             </TextView>
@@ -106,7 +161,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="确定"
+                android:text="@string/confirm"
                 android:textColor="@color/white" />
         </RelativeLayout>
     </LinearLayout>

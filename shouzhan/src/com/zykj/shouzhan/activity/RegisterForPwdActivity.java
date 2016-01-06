@@ -48,12 +48,12 @@ public class RegisterForPwdActivity extends BaseActivity {
 		if(!isUsed)
 			return;
 		if(et_register_pwd_first.getText().toString().equals(et_register_pwd_two.getText().toString())){
-			Toast.makeText(RegisterForPwdActivity.this, "密码设置成功", Toast.LENGTH_SHORT).show();
+			Toast.makeText(RegisterForPwdActivity.this, getString(R.string.pwd_set_success), Toast.LENGTH_SHORT).show();
 			startActivity(new Intent(RegisterForPwdActivity.this,RegisterForPayActivity.class));
 			overridePendingTransition(R.anim.default_fromright_in, R.anim.default_toleft_out);
 		}
 		else
-			Toast.makeText(RegisterForPwdActivity.this, "两次密码输入不一致，请重新输入", Toast.LENGTH_SHORT).show();
+			Toast.makeText(RegisterForPwdActivity.this, getString(R.string.pwd_set_notsame), Toast.LENGTH_SHORT).show();
 	}
 	
 	/**
@@ -71,7 +71,7 @@ public class RegisterForPwdActivity extends BaseActivity {
 	@OnFocusChange(R.id.et_register_pwd_first)
 	public void registerPwdFFocusChange(boolean b){
 		if(!b)
-			Toast.makeText(RegisterForPwdActivity.this, TextUtil.isPasswordLengthLegal(et_register_pwd_first.getText().toString())?"密码合法":"密码不合法，请重新输入", Toast.LENGTH_SHORT).show();
+			Toast.makeText(RegisterForPwdActivity.this, TextUtil.isPasswordLengthLegal(et_register_pwd_first.getText().toString())?getString(R.string.pwd_set_ispwd):getString(R.string.pwd_set_notpwd), Toast.LENGTH_SHORT).show();
 		
 	}
 	
