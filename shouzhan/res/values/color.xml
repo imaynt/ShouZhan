@@ -20,6 +20,7 @@
      <color name="tab_font_normal">#343434</color>
     
     <color name="red">#FF0000</color>
+    <color name="blue">#0000FF</color>
     <color name="grey">#B2B2B2</color>
     <color name="lgrey">#d6d6d6</color>
     <color name="dgrey">#C9C9C9</color>

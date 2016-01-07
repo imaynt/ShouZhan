@@ -5,29 +5,29 @@
     <string name="register_shouzhan">kaitongshouzhan</string>
     <string name="login_shouzhan">denglushouzhan</string>
     <string name="btn_back">fanhui</string>
-	<!-- 手站登陆注册-Dialog============================================================== -->
-	<string name="comm_dialog_message">cihaomayijingzhuceguo!</string>
-	<string name="pwd_err_msg">mimayuzhanghaobupipei！</string>
-	<string name="login_err_msg">cihaoshangweizhuce,qingzhuce！</string>
-	<string name="cancel_dialog">quxiao</string>
-	<string name="login_dialog">denglu</string>
-	<string name="register_dialog">zhuce</string>
-	<string name="found_dialog">zhaohuimima</string>
-	<!-- 手站登陆注册-手机验证页面========================================================= -->
-	<string name="phone_check">1 shoujiyanzheng></string>
-	<string name="pwd_set">2 mimashezhi></string>
-	<string name="pay_years">3 zhifunianfei</string>
-	<string name="input_phone_msg">qingshurushoujihao</string>
-	<string name="read_shouzhan">woyiyuedubingtongyi</string>
-	<string name="send_check">fasongyanzhengma</string>
-	<string name="shouzhan_xieyi"><u>shouzhanyonghuxieding</u></string>
-	<string name="input_code_msg">qingshuruyinzhengma</string>
-	<string name="send_again">zaicifasong</string>
-	<string name="confirm">queding</string>
-	<!-- 手站登陆注册-密码设置页面========================================================= -->
-	<string name="register_pwd">shezhimima</string>
-	<string name="input_pwd">qingshuru6-16mima</string>
-	<string name="input_pwd_again">qingzaicishuru</string>
+    <!-- 手站登陆注册-Dialog============================================================== -->
+    <string name="comm_dialog_message">cihaomayijingzhuceguo!</string>
+    <string name="pwd_err_msg">mimayuzhanghaobupipei！</string>
+    <string name="login_err_msg">cihaoshangweizhuce,qingzhuce！</string>
+    <string name="cancel_dialog">quxiao</string>
+    <string name="login_dialog">denglu</string>
+    <string name="register_dialog">zhuce</string>
+    <string name="found_dialog">zhaohuimima</string>
+    <!-- 手站登陆注册-手机验证页面========================================================= -->
+    <string name="phone_check">1 shoujiyanzheng></string>
+    <string name="pwd_set">2 mimashezhi></string>
+    <string name="pay_years">3 zhifunianfei</string>
+    <string name="input_phone_msg">qingshurushoujihao</string>
+    <string name="read_shouzhan">woyiyuedubingtongyi</string>
+    <string name="send_check">fasongyanzhengma</string>
+    <string name="shouzhan_xieyi"><u>shouzhanyonghuxieding</u></string>
+    <string name="input_code_msg">qingshuruyinzhengma</string>
+    <string name="send_again">zaicifasong</string>
+    <string name="confirm">queding</string>
+    <!-- 手站登陆注册-密码设置页面========================================================= -->
+    <string name="register_pwd">shezhimima</string>
+    <string name="input_pwd">qingshuru6-16mima</string>
+    <string name="input_pwd_again">qingzaicishuru</string>
     <!-- 手站登陆注册-支付年费页面========================================================= -->
     <string name="more_three_years">yicizuiduosannian</string>
     <string name="shouzhan_years">shouzhanfeiyong:</string>
@@ -76,13 +76,16 @@
     <string name="pwd_set_notpwd">mimabuhefa,chongixinshuru</string>
     <string name="pwd_set_ispwd">mimahefa</string>
     <!-- ================================================================================ -->
-    
+
+
     <!-- 手站登陆注册===================================================================== -->
-    <!-- <string name="lor_guest">Guest</string>
+    <!--
+    <string name="lor_guest">Guest</string>
     <string name="register_shouzhan">Register Shouzhan</string>
     <string name="login_shouzhan">Login Shouzhan</string>
     <string name="btn_back">back</string>
-    <string name="comm_dialog_message">此号码已经注册过!</string> -->
+    <string name="comm_dialog_message">此号码已经注册过!</string>
+    -->
     <!-- 手站登陆注册===================================================================== -->
 
 
@@ -117,10 +120,10 @@
     <string name="mobanguanli">Model Manage</string>
     <string name="waiwenwangzhan">EN Net</string>
     <string name="yaoqinghaoyou">Invite Friend</string>
+    <string name="guanli_lianxi">Manage Contact</string>
 
     <!-- 管理 联系方式 -->
     <string name="mobile">Mobile</string>
-    <string name="mobile2">Mobile：</string>
     <string name="telephone">Telephone</string>
     <string name="contacts">Contacts</string>
     <string name="QQ">QQ</string>
@@ -136,6 +139,16 @@
     <string name="input_weixin">Please Input WeiXin</string>
     <string name="input_url">Please Input Url</string>
     <string name="input_address">Please Input Address</string>
+    <string name="manage_contacts_style">Manage Contact style</string>
+    <string name="mobile2">Mobile：</string>
+    <string name="contacts2">Contacts：</string>
+    <string name="QQ2">QQ：</string>
+    <string name="weixin2">WeiChat：</string>
+    <string name="address2">Address：</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="preview">Preview</string>
+    <string name="map_navigation">Map Navigation</string>
 
     <!-- 模板管理 -->
     <string name="moban_manage">Model Manage</string>
@@ -152,7 +165,7 @@
     <string name="shouzhan_manage">ShouZhan Manage-ENGLISH</string>
     <string name="waiwen_net">EN NET</string>
     <string name="select_language">Select Language</string>
-       <string name="pull_table">Drop down list box </string>
+    <string name="pull_table">Drop down list box </string>
 
     <!-- 邀请好友 -->
     <string name="invite_friend">Invite friend</string>

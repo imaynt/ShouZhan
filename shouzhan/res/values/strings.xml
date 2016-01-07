@@ -5,29 +5,29 @@
     <string name="register_shouzhan">开通手站</string>
     <string name="login_shouzhan">登陆手站</string>
     <string name="btn_back">返回</string>
-	<!-- 手站登陆注册-Dialog============================================================== -->
-	<string name="comm_dialog_message">此号码已经注册过!</string>
-	<string name="pwd_err_msg">密码与账号不匹配！</string>
-	<string name="login_err_msg">此号码尚未注册，请先注册！</string>
-	<string name="cancel_dialog">取消</string>
-	<string name="login_dialog">登陆</string>
-	<string name="register_dialog">注册</string>
-	<string name="found_dialog">找回密码</string>
-	<!-- 手站登陆注册-手机验证页面========================================================= -->
-	<string name="phone_check">1 手机验证></string>
-	<string name="pwd_set">2 密码设置></string>
-	<string name="pay_years">3 支付年费</string>
-	<string name="input_phone_msg">请输入您的手机号码</string>
-	<string name="read_shouzhan">我已阅读并同意</string>
-	<string name="send_check">发送验证码</string>
-	<string name="shouzhan_xieyi"><u>手站用户协定</u></string>
-	<string name="input_code_msg">请输入短信验证码</string>
-	<string name="send_again">再次发送</string>
-	<string name="confirm">确定</string>
-	<!-- 手站登陆注册-密码设置页面========================================================= -->
-	<string name="register_pwd">设置密码</string>
-	<string name="input_pwd">请输入6-16为密码</string>
-	<string name="input_pwd_again">请再次输入密码</string>
+    <!-- 手站登陆注册-Dialog============================================================== -->
+    <string name="comm_dialog_message">此号码已经注册过!</string>
+    <string name="pwd_err_msg">密码与账号不匹配！</string>
+    <string name="login_err_msg">此号码尚未注册，请先注册！</string>
+    <string name="cancel_dialog">取消</string>
+    <string name="login_dialog">登陆</string>
+    <string name="register_dialog">注册</string>
+    <string name="found_dialog">找回密码</string>
+    <!-- 手站登陆注册-手机验证页面========================================================= -->
+    <string name="phone_check">1 手机验证></string>
+    <string name="pwd_set">2 密码设置></string>
+    <string name="pay_years">3 支付年费</string>
+    <string name="input_phone_msg">请输入您的手机号码</string>
+    <string name="read_shouzhan">我已阅读并同意</string>
+    <string name="send_check">发送验证码</string>
+    <string name="shouzhan_xieyi"><u>手站用户协定</u></string>
+    <string name="input_code_msg">请输入短信验证码</string>
+    <string name="send_again">再次发送</string>
+    <string name="confirm">确定</string>
+    <!-- 手站登陆注册-密码设置页面========================================================= -->
+    <string name="register_pwd">设置密码</string>
+    <string name="input_pwd">请输入6-16为密码</string>
+    <string name="input_pwd_again">请再次输入密码</string>
     <!-- 手站登陆注册-支付年费页面========================================================= -->
     <string name="more_three_years">一次最多开通3年</string>
     <string name="shouzhan_years">手站年费:</string>
@@ -109,10 +109,10 @@
     <string name="mobanguanli">模板管理</string>
     <string name="waiwenwangzhan">外文网站</string>
     <string name="yaoqinghaoyou">邀请好友</string>
-    
+    <string name="guanli_lianxi">管理联系</string>
+
     <!-- 管理 联系方式 -->
     <string name="mobile">手机</string>
-    <string name="mobile2">手机：</string>
     <string name="telephone">固定电话</string>
     <string name="contacts">联系人</string>
     <string name="QQ">QQ</string>
@@ -129,6 +129,17 @@
     <string name="input_url">请输入网站</string>
     <string name="input_address">请输入详细地址</string>
     
+    <string name="manage_contacts_style">管理联系方式</string>
+    <string name="mobile2">手机：</string>
+    <string name="telephone2">固定电话：</string>
+    <string name="contacts2">联系人：</string>
+    <string name="QQ2">QQ：</string>
+    <string name="weixin2">微信：</string>
+    <string name="address2">地址：</string>
+    <string name="edit">编辑</string>
+    <string name="delete">删除</string>
+    <string name="preview">预览效果</string>
+    <string name="map_navigation">地图导航</string>
 
     <!-- 邀请好友 -->
     <string name="invite_friend">邀请好友</string>

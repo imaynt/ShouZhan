@@ -12,13 +12,12 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/bg_index" >
+            android:background="@color/white">
 
         <LinearLayout
             android:id="@+id/ll_top"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
             android:orientation="vertical"
             android:paddingBottom="15dp"
             android:paddingLeft="20dp"
@@ -37,10 +36,17 @@
 
                 <TextView
                     android:id="@+id/tv_mobile"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
                     android:textSize="16sp" />
+                <ImageView 
+                    android:layout_width="15sp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/icon_2x_shouji"
+                    android:contentDescription="@string/app_name"/>
             </LinearLayout>
 
             <LinearLayout
@@ -57,10 +63,17 @@
 
                 <TextView
                     android:id="@+id/tv_telephone"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
                     android:textSize="16sp" />
+                <ImageView 
+                    android:layout_width="15sp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/icon_2x_gudingdianhua"
+                    android:contentDescription="@string/app_name"/>
             </LinearLayout>
 
             <LinearLayout
@@ -77,10 +90,17 @@
 
                 <TextView
                     android:id="@+id/tv_contacts"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
                     android:textSize="16sp" />
+                <ImageView 
+                    android:layout_width="15sp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/icon_2x_lianxiren"
+                    android:contentDescription="@string/app_name"/>
             </LinearLayout>
 
             <LinearLayout
@@ -97,10 +117,17 @@
 
                 <TextView
                     android:id="@+id/tv_qq"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
                     android:textSize="16sp" />
+                <ImageView 
+                    android:layout_width="15sp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/icon_2x_qq"
+                    android:contentDescription="@string/app_name"/>
             </LinearLayout>
 
             <LinearLayout
@@ -117,10 +144,17 @@
 
                 <TextView
                     android:id="@+id/tv_weichat"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
                     android:textSize="16sp" />
+                <ImageView 
+                    android:layout_width="15sp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/icon_2x_weixin"
+                    android:contentDescription="@string/app_name"/>
             </LinearLayout>
 
             <LinearLayout
@@ -164,40 +198,16 @@
             android:paddingRight="15dp" >
 
             <TextView
-                android:id="@+id/btn_delete"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_weight="1"
-                android:background="@color/btn_lgrey"
-                android:gravity="center"
-                android:text="@string/delete"
-                android:textColor="@color/background_title"
-                android:textSize="18sp" />
-
-            <TextView
                 android:id="@+id/btn_edit"
                 android:layout_width="0dp"
                 android:layout_height="40dp"
-                android:layout_marginLeft="20dp"
                 android:layout_weight="1"
-                android:background="@color/baby_red"
+                android:background="@color/bg_index"
                 android:gravity="center"
-                android:text="@string/edit"
-                android:textColor="@color/white"
+                android:text="@string/guanli_lianxi"
+                android:textColor="@color/red"
                 android:textSize="18sp" />
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/btn_preview"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_gravity="bottom"
-            android:background="@color/white"
-            android:gravity="center"
-            android:layout_alignParentBottom="true"
-            android:text="@string/preview"
-            android:textColor="@color/red"
-            android:textSize="18sp" />
     </RelativeLayout>
 
 </LinearLayout>

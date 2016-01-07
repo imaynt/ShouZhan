@@ -1,12 +1,15 @@
 package com.zykj.shouzhan.activity;
 
 import com.zykj.shouzhan.R;
-import com.zykj.shouzhan.fragment.MyShouZhanFragment;
+import com.zykj.shouzhan.fragment.MSZChanPinFragment;
+import com.zykj.shouzhan.fragment.MSZEnglishFragment;
+import com.zykj.shouzhan.fragment.MSZGongSiFragment;
+import com.zykj.shouzhan.fragment.MSZLianXiFragment;
+import com.zykj.shouzhan.fragment.MSZShouYeFragment;
 import com.zykj.shouzhan.view.MyCommonTitle;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.widget.FrameLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
@@ -15,7 +18,11 @@ import android.widget.RadioGroup.OnCheckedChangeListener;
 public class MyShouZhanActivity extends FragmentActivity {
 	private MyCommonTitle myCommonTitle;
 	private RadioGroup tab_shouzhan;
-	private MyShouZhanFragment shouyeFragment, chanpinFragment, gongsiFragment,lianxiFragment,englishFragment;
+	private MSZShouYeFragment shouyeFragment;//首页
+	private MSZChanPinFragment chanpinFragment;//产品
+	private MSZGongSiFragment gongsiFragment;//公司
+	private MSZLianXiFragment lianxiFragment;//联系
+	private MSZEnglishFragment englishFragment;//英文
 	private int checkedId = R.id.rb_shouye;// 当前Fragment
 
 	@Override
@@ -40,11 +47,11 @@ public class MyShouZhanActivity extends FragmentActivity {
 		((RadioButton) findViewById(R.id.rb_lianxi)).setText(getString(R.string.lianxi));
 		((RadioButton) findViewById(R.id.rb_english)).setText(getString(R.string.yingwen));
 		
-		shouyeFragment = MyShouZhanFragment.getInstance(1);//首页
-		chanpinFragment = MyShouZhanFragment.getInstance(2);//产品
-		gongsiFragment = MyShouZhanFragment.getInstance(3);//公司
-		lianxiFragment = MyShouZhanFragment.getInstance(4);//联系
-		englishFragment = MyShouZhanFragment.getInstance(5);//英文
+		shouyeFragment = MSZShouYeFragment.getInstance(1);//首页
+		chanpinFragment = MSZChanPinFragment.getInstance(2);//产品
+		gongsiFragment = MSZGongSiFragment.getInstance(3);//公司
+		lianxiFragment = MSZLianXiFragment.getInstance(4);//联系
+		englishFragment = MSZEnglishFragment.getInstance(5);//英文
 
 		tab_shouzhan.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 			public void onCheckedChanged(RadioGroup group, int checkedId) {

@@ -17,7 +17,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="20dp"
             android:orientation="vertical" >
 
             <LinearLayout
@@ -31,7 +31,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="20dp"
                     android:text="@string/mobile"
                     android:textSize="16sp" />
 
@@ -39,7 +39,7 @@
                     android:id="@+id/ed_mobile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="20dp"
                     android:background="@drawable/bg_null_white"
                     android:hint="@string/input_mobile" />
             </LinearLayout>
@@ -56,7 +56,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="20dp"
                     android:text="@string/telephone"
                     android:textSize="16sp" />
 
@@ -64,7 +64,7 @@
                     android:id="@+id/ed_telephone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="20dp"
                     android:background="@drawable/bg_null_white"
                     android:hint="@string/input_telephone" />
             </LinearLayout>
@@ -81,7 +81,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="20dp"
                     android:text="@string/contacts"
                     android:textSize="16sp" />
 
@@ -89,7 +89,7 @@
                     android:id="@+id/ed_contacts"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="20dp"
                     android:background="@drawable/bg_null_white"
                     android:hint="@string/input_contacts" />
             </LinearLayout>
@@ -106,7 +106,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="20dp"
                     android:text="@string/QQ"
                     android:textSize="16sp" />
 
@@ -114,7 +114,7 @@
                     android:id="@+id/ed_qq"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="20dp"
                     android:background="@drawable/bg_null_white"
                     android:hint="@string/input_qq" />
             </LinearLayout>
@@ -131,7 +131,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="20dp"
                     android:text="@string/weixin"
                     android:textSize="16sp" />
 
@@ -139,7 +139,7 @@
                     android:id="@+id/ed_weixin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="20dp"
                     android:background="@drawable/bg_null_white"
                     android:hint="@string/input_weixin" />
             </LinearLayout>
@@ -156,7 +156,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="20dp"
                     android:text="@string/other_url"
                     android:textSize="16sp" />
 
@@ -164,7 +164,7 @@
                     android:id="@+id/ed_other_url"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="20dp"
                     android:background="@drawable/bg_null_white"
                     android:hint="@string/input_url" />
             </LinearLayout>
@@ -181,7 +181,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="20dp"
                     android:text="@string/in_area"
                     android:textSize="16sp" />
 
@@ -189,7 +189,7 @@
                     android:id="@+id/ed_in_area"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="20dp"
                     android:layout_weight="1"
                     android:background="@drawable/bg_null_white" />
 
@@ -212,7 +212,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="20dp"
                     android:text="@string/details_address"
                     android:textSize="16sp" />
 
@@ -220,7 +220,7 @@
                     android:id="@+id/ed_details_address"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="20dp"
                     android:background="@drawable/bg_null_white"
                     android:hint="@string/input_address" />
             </LinearLayout>
@@ -229,8 +229,8 @@
                 android:id="@+id/tv_submit"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
                 android:layout_marginTop="20dp"
                 android:background="@color/background_title"
                 android:gravity="center"

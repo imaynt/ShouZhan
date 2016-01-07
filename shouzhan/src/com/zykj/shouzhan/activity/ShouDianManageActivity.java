@@ -84,7 +84,7 @@ public class ShouDianManageActivity extends BaseActivity {
 	 */
 	@OnClick(R.id.ll_lianxifangshi)
 	public void lianXiFangShi() {
-
+		startActivity(new Intent(ShouDianManageActivity.this, ManageContactsStyleAcyivity.class));
 	}
 
 	/**
