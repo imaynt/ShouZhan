@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_margin="10dp" >
+	    
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:background="@color/white">
+	        
+	        <TextView 
+	            android:id="@+id/tv_new_pro"
+	            android:layout_width="5dp"
+	            android:layout_height="15dp"
+	            android:layout_marginRight="5dp"
+	            android:layout_centerVertical="true"
+	            android:background="@color/baby_red"/>
+	        
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_toRightOf="@+id/tv_new_pro"
+	            android:text="@string/new_product"/>
+	        
+	        <TextView 
+	            android:id="@+id/class_pro"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:text="@string/class_product"
+	            android:layout_alignParentRight="true"
+	            android:textColor="@color/gray"/>
+	        
+	        <ImageView 
+	            android:layout_width="14dp"
+	            android:layout_height="14dp"
+	            android:layout_marginRight="5dp"
+	            android:layout_centerVertical="true"
+	            android:layout_toLeftOf="@+id/class_pro"
+	            android:src="@drawable/menu_product"/>
+
+	        
+	    </RelativeLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:layout_marginTop="5dp"
+	        android:background="@color/baby_gray">
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:orientation="horizontal" >
+	        
+	        <LinearLayout 
+	            android:id="@+id/ll_bsq"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:orientation="vertical">
+	            
+	            <ImageView 
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:adjustViewBounds="true"
+	                android:src="@drawable/dijiabang"/>
+	            <TextView 
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="7dp"
+	                android:layout_marginBottom="7dp"
+	                android:text="@string/pro_title"/>
+	            <TextView 
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/baby_red"
+	                android:text="@string/pro_price"/>
+	            
+	        </LinearLayout>
+	        
+	        <LinearLayout 
+	            android:layout_width="7dp"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical">
+	            
+	        </LinearLayout>
+	        
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:orientation="vertical">
+	            
+	            <ImageView 
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:adjustViewBounds="true"
+	                android:src="@drawable/dijiabang"/>
+	            <TextView 
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="7dp"
+	                android:layout_marginBottom="7dp"
+	                android:text="@string/pro_title"/>
+	            <TextView 
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/baby_red"
+	                android:text="@string/pro_price"/>
+	            
+	        </LinearLayout>
+	        
+	    </LinearLayout>
+	    
+	</LinearLayout>
+    
+</ScrollView>

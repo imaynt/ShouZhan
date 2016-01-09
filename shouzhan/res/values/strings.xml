@@ -76,6 +76,19 @@
     <string name="pwd_set_notpwd">密码不合法，请重新输入</string>
     <string name="pwd_set_ispwd">密码合法</string>
     <!-- ================================================================================ -->
+    
+    <!-- 已开通手站-产品================================================================== -->
+    <string name="new_product">最新产品</string>
+    <string name="class_product">分类</string>
+    <string name="pro_title">奥特曼变身棒M78星云正版进口货</string>
+    <string name="pro_price">价格面议</string>
+    <string name="class_pro_msg">商品分类</string>
+    <string name="class_pro_gyp">工艺品</string>
+    <string name="class_pro_bsq">变身器</string>
+    <string name="class_pro_sb">随便</string>
+    <string name="class_pro_zjsc">最近上传</string>
+    <string name="manager_class">管理分类</string>
+    <!-- ================================================================================ -->
 
 
     <!-- 点入的appkey -->

@@ -12,7 +12,12 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.RelativeLayout;
+import android.widget.Toast;
 import android.widget.RadioGroup.OnCheckedChangeListener;
+import butterknife.Bind;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 
 public class MyShouZhanActivity extends FragmentActivity {
@@ -24,14 +29,15 @@ public class MyShouZhanActivity extends FragmentActivity {
 	private MSZLianXiFragment lianxiFragment;//联系
 	private MSZEnglishFragment englishFragment;//英文
 	private int checkedId = R.id.rb_shouye;// 当前Fragment
-
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.ui_my_shouzhan_activity);
-
+		
 		initView();
 		requestData();
+		
 	}
 
 	private void initView() {
@@ -94,5 +100,5 @@ public class MyShouZhanActivity extends FragmentActivity {
 				.show(shouyeFragment).hide(chanpinFragment).hide(gongsiFragment)
 				.hide(lianxiFragment).hide(englishFragment).commit();
 	}
-
+	
 }
