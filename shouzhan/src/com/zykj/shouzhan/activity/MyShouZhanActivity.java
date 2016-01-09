@@ -23,7 +23,7 @@ public class MyShouZhanActivity extends FragmentActivity {
 	private MSZGongSiFragment gongsiFragment;//公司
 	private MSZLianXiFragment lianxiFragment;//联系
 	private MSZEnglishFragment englishFragment;//英文
-	private int checkedId ;// 当前Fragment
+	private int checkedId=1 ;// 当前Fragment
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

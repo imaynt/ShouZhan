@@ -111,7 +111,17 @@
     <string name="gongsi">公司</string>
     <string name="lianxi">联系</string>
     <string name="yingwen">EN</string>
-
+    <!-- 管理 -->
+    <string name="edit_product">编辑产品</string>
+    <string name="product_pic">产品图片</string>
+    <string name="product_name">产品名称</string>
+    <string name="input_product_name">请输入产品名称</string>
+    <string name="product_price">产品价格</string>
+    <string name="input_product_price">不写默认面议</string>
+    <string name="product_sort">产品分类</string>
+    <string name="product_intro">产品说明</string>
+    
+    
     <!-- 管理 -->
     <string name="shoudianguanli">手店管理</string>
     <string name="shangchuan">上传产品</string>
