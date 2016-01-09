@@ -110,6 +110,21 @@
     <string name="waiwenwangzhan">外文网站</string>
     <string name="yaoqinghaoyou">邀请好友</string>
     <string name="guanli_lianxi">管理联系</string>
+    <string name="delete_message">确认是否删除？</string>
+    <string name="quxiao">取消</string>
+    <string name="queding">确定</string>
+    <string name="delete_sucess">删除成功</string>
+
+    <!-- 管理 公司 -->
+    <string name="manage_company_intro">管理公司介绍</string>
+    <string name="manage_company">管理公司</string>
+    <string name="complete">完成</string>
+    <string name="shangchuantupian">上传图片</string>
+    <string name="fangda">放大</string>
+    <string name="company_name">公司名称</string>
+    <string name="input_company_name">请输入公司名称</string>
+    <string name="company_intro">公司介绍</string>
+    <string name="tijiao">提交</string>
 
     <!-- 管理 联系方式 -->
     <string name="mobile">手机</string>
@@ -128,7 +143,6 @@
     <string name="input_weixin">请输入微信号</string>
     <string name="input_url">请输入网站</string>
     <string name="input_address">请输入详细地址</string>
-    
     <string name="manage_contacts_style">管理联系方式</string>
     <string name="mobile2">手机：</string>
     <string name="telephone2">固定电话：</string>
@@ -141,16 +155,30 @@
     <string name="preview">预览效果</string>
     <string name="map_navigation">地图导航</string>
 
+    <!-- 模板管理 -->
+    <string name="moban_manage">Model Manage</string>
+    <string name="button_style">按钮样式</string>
+    <string name="background_pic">背景图片</string>
+    <string name="select_button_style">选择按钮样式</string>
+    <string name="check">查看</string>
+    <string name="xuanyong">选用</string>
+    <string name="from_photo">从手机相册选取</string>
+    <string name="from_camera">拍一张</string>
+    <string name="from_teacher">摄影师作品</string>
+
     <!-- 邀请好友 -->
     <string name="invite_friend">邀请好友</string>
     <string name="back">返回</string>
     <string name="invite_content">邀请好友也来开通手站吧~</string>
     <string name="share">分享</string>
     <string name="copy">复制</string>
+    <string name="erweima">二维码</string>
+    <string name="positive">确定</string>
+    <string name="download">下载</string>
+    <string name="download_message">确定要下载二维码图片？</string>
 
     <!-- 更多 -->
     <string name="load_data">正在加载,请稍候&#8230;</string>
-    <string name="positive">确定</string>
 
     <!-- 按钮上字符串 -->
     <string name="xlistview_header_hint_normal">下拉刷新</string>

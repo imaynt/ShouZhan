@@ -84,7 +84,7 @@
     <string name="register_shouzhan">Register Shouzhan</string>
     <string name="login_shouzhan">Login Shouzhan</string>
     <string name="btn_back">back</string>
-    <string name="comm_dialog_message">此号码已经注册过!</string>
+    <string name="comm_dialog_message">此号码已经注册过!</string>
     -->
     <!-- 手站登陆注册===================================================================== -->
 
@@ -121,6 +121,21 @@
     <string name="waiwenwangzhan">EN Net</string>
     <string name="yaoqinghaoyou">Invite Friend</string>
     <string name="guanli_lianxi">Manage Contact</string>
+    <string name="delete_message">Are you sure to delete？</string>
+    <string name="quxiao">Cancel</string>
+    <string name="queding">Sure</string>
+    <string name="delete_sucess">Delete Success</string>
+
+    <!-- 管理 公司 -->
+    <string name="manage_company_intro">Manage Company Intro</string>
+    <string name="manage_company">Manage Company</string>
+    <string name="complete">Complete</string>
+    <string name="shangchuantupian">Submit Picture</string>
+    <string name="fangda">Enlarge</string>
+    <string name="company_name">Company Name</string>
+    <string name="input_company_name">Please input company name</string>
+    <string name="company_intro">Company Intro</string>
+    <string name="tijiao">Submit</string>
 
     <!-- 管理 联系方式 -->
     <string name="mobile">Mobile</string>
@@ -154,6 +169,12 @@
     <string name="moban_manage">Model Manage</string>
     <string name="button_style">Button Style</string>
     <string name="background_pic">Background Picture</string>
+    <string name="select_button_style">Select Button Style</string>
+    <string name="check">Check</string>
+    <string name="xuanyong">Select</string>
+    <string name="from_photo">Select from photo</string>
+    <string name="from_camera">Take a picture</string>
+    <string name="from_teacher">Photographer works</string>
 
     <!-- 开通手站 -->
     <string name="open_content">Open sucessfull：ShouZhan in english</string>
@@ -171,11 +192,11 @@
     <string name="invite_friend">Invite friend</string>
     <string name="erweima">Two Code</string>
     <string name="back">Back</string>
-    <string name="invite_content">Invite your friends to open your ShouZhan~</string>
+    <string name="invite_content">Invite your friends to open ShouZhan~</string>
     <string name="share">Share</string>
     <string name="copy">Copy</string>
     <string name="download">DownLoad</string>
-
+    <string name="download_message">Are you sure to download the Two Code？</string>
     <!-- 按钮上字符串 -->
     <string name="xlistview_header_hint_normal">下拉刷新</string>
     <string name="xlistview_header_hint_ready">松开刷新数据</string>

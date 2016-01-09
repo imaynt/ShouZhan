@@ -76,7 +76,7 @@ public class ShouDianManageActivity extends BaseActivity {
 	 */
 	@OnClick(R.id.ll_gongsijieshao)
 	public void gongSiJieShao() {
-
+		startActivity(new Intent(ShouDianManageActivity.this, ManageCompanyIntroFirstActivity.class));
 	}
 
 	/**
@@ -93,7 +93,6 @@ public class ShouDianManageActivity extends BaseActivity {
 	@OnClick(R.id.ll_mobanguanli)
 	public void moBanGuanLi() {
 		startActivity(new Intent(ShouDianManageActivity.this, MoBanManageActivity.class));
-		finish();
 	}
 
 	/**
@@ -102,7 +101,6 @@ public class ShouDianManageActivity extends BaseActivity {
 	@OnClick(R.id.ll_waiwenwangzhan)
 	public void waiWenWangZhan() {
 		startActivity(new Intent(ShouDianManageActivity.this, WaiWenNetActivity.class));
-		finish();
 	}
 
 	/**

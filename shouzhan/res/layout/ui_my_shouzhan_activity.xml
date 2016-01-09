@@ -21,8 +21,7 @@
 
         <RadioButton
             android:id="@+id/rb_shouye"
-            style="@style/my_radiobutton"
-            android:checked="true" />
+            style="@style/my_radiobutton"/>
 
         <RadioButton
             android:id="@+id/rb_chanpin"

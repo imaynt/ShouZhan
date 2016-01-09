@@ -1,15 +1,23 @@
 package com.zykj.shouzhan.fragment;
 
 import com.loopj.android.http.RequestParams;
+import com.zykj.shouzhan.R;
+import com.zykj.shouzhan.activity.ManageCompanyIntroSecondActivity;
+import com.zykj.shouzhan.activity.ManageContactsStyleAcyivity;
 import com.zykj.shouzhan.view.XListView;
 import com.zykj.shouzhan.view.XListView.IXListViewListener;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+import butterknife.Bind;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class MSZGongSiFragment extends Fragment implements IXListViewListener {
 
@@ -19,6 +27,8 @@ public class MSZGongSiFragment extends Fragment implements IXListViewListener {
 	private XListView mListView;
 	private Handler mHandler;
 	private RequestParams params;
+	@Bind(R.id.btn_manage_company)
+	TextView btn_manage_lianxi;// 管理联系
 
 	/**
 	 * @param type
@@ -39,7 +49,8 @@ public class MSZGongSiFragment extends Fragment implements IXListViewListener {
 	 */
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
+		View view=inflater.inflate(R.layout.ui_ms_company_intro, null);
+		
 		ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
 				ViewGroup.LayoutParams.MATCH_PARENT);
 		mListView = new XListView(getActivity(), null);
@@ -48,10 +59,16 @@ public class MSZGongSiFragment extends Fragment implements IXListViewListener {
 		mListView.setPullRefreshEnable(true);
 		mListView.setPullLoadEnable(true);
 		mListView.setXListViewListener(this);
-		return mListView;
+		ButterKnife.bind(this,view);
+		return view;
 
 	}
-
+	@OnClick(R.id.btn_manage_company) // 管理联系
+	public void manageLianXi() {
+		
+		startActivity(new Intent(getActivity(), ManageCompanyIntroSecondActivity.class));
+	}
+	
 	/**
 	 * 配置页面参数
 	 */

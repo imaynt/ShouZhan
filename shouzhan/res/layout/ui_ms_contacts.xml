@@ -4,15 +4,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <com.zykj.shouzhan.view.MyCommonTitle
-        android:id="@+id/aci_mytitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-            android:background="@color/white">
+        android:background="@color/white" >
 
         <LinearLayout
             android:id="@+id/ll_top"
@@ -40,13 +35,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
                     android:textSize="16sp" />
-                <ImageView 
+
+                <ImageView
                     android:layout_width="15sp"
                     android:layout_height="15dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="20dp"
-                    android:src="@drawable/icon_2x_shouji"
-                    android:contentDescription="@string/app_name"/>
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_2x_shouji" />
             </LinearLayout>
 
             <LinearLayout
@@ -67,13 +63,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
                     android:textSize="16sp" />
-                <ImageView 
+
+                <ImageView
                     android:layout_width="15sp"
                     android:layout_height="15dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="20dp"
-                    android:src="@drawable/icon_2x_gudingdianhua"
-                    android:contentDescription="@string/app_name"/>
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_2x_gudingdianhua" />
             </LinearLayout>
 
             <LinearLayout
@@ -94,13 +91,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
                     android:textSize="16sp" />
-                <ImageView 
+
+                <ImageView
                     android:layout_width="15sp"
                     android:layout_height="15dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="20dp"
-                    android:src="@drawable/icon_2x_lianxiren"
-                    android:contentDescription="@string/app_name"/>
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_2x_lianxiren" />
             </LinearLayout>
 
             <LinearLayout
@@ -121,13 +119,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
                     android:textSize="16sp" />
-                <ImageView 
+
+                <ImageView
                     android:layout_width="15sp"
                     android:layout_height="15dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="20dp"
-                    android:src="@drawable/icon_2x_qq"
-                    android:contentDescription="@string/app_name"/>
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_2x_qq" />
             </LinearLayout>
 
             <LinearLayout
@@ -143,18 +142,19 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/tv_weichat"
+                    android:id="@+id/tv_weixin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
                     android:textSize="16sp" />
-                <ImageView 
+
+                <ImageView
                     android:layout_width="15sp"
                     android:layout_height="15dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="20dp"
-                    android:src="@drawable/icon_2x_weixin"
-                    android:contentDescription="@string/app_name"/>
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_2x_weixin" />
             </LinearLayout>
 
             <LinearLayout
@@ -172,11 +172,12 @@
                 <TextView
                     android:id="@+id/tv_address"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
                     android:textSize="16sp" />
-                  <TextView
+
+                <TextView
                     android:id="@+id/tv_map_navigation"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -187,27 +188,18 @@
             </LinearLayout>
         </LinearLayout>
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/btn_manage_lianxi"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:gravity="center"
+            android:layout_height="40dp"
             android:layout_below="@id/ll_top"
-            android:orientation="horizontal"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp" >
-
-            <TextView
-                android:id="@+id/btn_edit"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_weight="1"
-                android:background="@color/bg_index"
-                android:gravity="center"
-                android:text="@string/guanli_lianxi"
-                android:textColor="@color/red"
-                android:textSize="18sp" />
-        </LinearLayout>
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/bg_index"
+            android:gravity="center"
+            android:text="@string/guanli_lianxi"
+            android:textColor="@color/red"
+            android:textSize="18sp" />
     </RelativeLayout>
 
 </LinearLayout>

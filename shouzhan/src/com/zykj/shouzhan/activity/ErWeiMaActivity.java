@@ -60,14 +60,14 @@ public class ErWeiMaActivity extends BaseActivity {
 	public void downLoadOnClick(){
 		AlertDialog.Builder builder =new Builder(ErWeiMaActivity.this);
 		builder.setMessage("确定要下载二维码图片？");
-		builder.setNegativeButton("取消", new OnClickListener() {
+		builder.setNegativeButton(getString(R.string.quxiao), new OnClickListener() {
 			
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				dialog.dismiss();
 			}
 		})
-		.setPositiveButton("确定", new OnClickListener() {
+		.setPositiveButton(getString(R.string.positive), new OnClickListener() {
 			
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
