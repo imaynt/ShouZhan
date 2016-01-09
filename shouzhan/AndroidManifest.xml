@@ -22,12 +22,13 @@
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
     <application
+        android:name="com.zykj.shouzhan.BaseApp"
         android:allowBackup="true"
-        android:icon="@drawable/logo"
+        android:icon="@drawable/icon_app"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.zykj.shouzhan.activity.LoginOrRegisterActivity"
+            android:name="com.zykj.shouzhan.activity.Welcome"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -81,7 +82,93 @@
             android:exported="true"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
-        <!-- 主页模板索引 -->
+        <!-- 引导图 -->
+        <activity
+            android:name=".activity.IntroActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- 首页 -->
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- 我的手站 -->
+        <activity
+            android:name=".activity.MyShouZhanActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- 手店管理 -->
+        <activity
+            android:name=".activity.ShouDianManageActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- 管理公司介绍    上传 -->
+        <activity
+            android:name=".activity.ManageCompanyIntroFirstActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- 管理公司介绍    编辑/删除/预览 -->
+        <activity
+            android:name=".activity.ManageCompanyIntroSecondActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- 管理联系方式 -->
+        <activity
+            android:name=".activity.ManageContactsStyleAcyivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- 管理联系方式  上传 -->
+        <activity
+            android:name=".activity.ManageContactsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- 模板管理 -->
+        <activity
+            android:name=".activity.MoBanManageActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- 模板管理      按钮样式 -->
+        <activity
+            android:name=".activity.MoBanManageSelectBtnStyleActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!-- 模板管理      应用按钮样式 -->
+        <activity
+            android:name=".activity.MoBanManageApplicationBtnStyleActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!-- 模板索引 -->
         <activity
             android:name=".activity.IndexOneActivity"
             android:configChanges="orientation|keyboardHidden"
@@ -107,46 +194,14 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
-        <!-- 首页 -->
+        <!-- 模板管理   背景图片 -->
         <activity
-            android:name=".activity.MainActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustResize" />
-        
-        <!-- 我的手站 -->
-        <activity
-            android:name=".activity.MyShouZhanActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustResize" />
-        
-        <!-- 手店管理 -->
-        <activity
-            android:name=".activity.ShouDianManageActivity"
+            android:name=".activity.MoBanManageSelectSceneActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
-        <!-- 管理联系方式 -->
-        <activity
-            android:name=".activity.ManageContactsStyleAcyivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustResize" />
-        
-        <!-- 模板管理 -->
-        <activity
-            android:name=".activity.MoBanManageActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustResize" />
-        
         <!-- 手站管理-外文 -->
         <activity
             android:name=".activity.ShouZhanManageENActivity"
@@ -154,15 +209,15 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
-        
-        <!-- 开通手站 -->
+
+        <!-- 外文网站 -->
         <activity
             android:name=".activity.WaiWenNetActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
-        
+
         <!-- 开通手站 -->
         <activity
             android:name=".activity.OpenShouZhanActivity"
@@ -170,15 +225,7 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
-        
-        <!-- 管理联系方式 -->
-        <activity
-            android:name=".activity.ManageContactsActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustResize" />
-        
+
         <!-- 二维码 -->
         <activity
             android:name=".activity.ErWeiMaActivity"
@@ -229,6 +276,12 @@
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
         <!-- 手站登陆注册=============================================================== -->
+        <activity
+            android:name=".activity.LoginOrRegisterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
         <!-- 手站登陆注册=============================================================== -->
         <!-- 登陆页面 -->
         <activity

@@ -2,42 +2,51 @@ package com.zykj.shouzhan.activity;
 
 import com.zykj.shouzhan.BaseActivity;
 import com.zykj.shouzhan.R;
-import com.zykj.shouzhan.utils.CommonUtils;
+import com.zykj.shouzhan.utils.StringUtil;
 import com.zykj.shouzhan.utils.Tools;
 import com.zykj.shouzhan.view.MyCommonTitle;
 
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.content.DialogInterface;
-import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
+import android.content.DialogInterface.OnClickListener;
 import android.os.Bundle;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class ManageContactsStyleAcyivity extends BaseActivity {
+public class ManageCompanyIntroSecondActivity extends BaseActivity {
 	@Bind(R.id.aci_mytitle)
 	MyCommonTitle myCommonTitle;
-	@Bind(R.id.btn_delete) // É¾³ý
-	TextView btn_delete;
-	@Bind(R.id.btn_edit) // ±à¼­
-	TextView btn_edit;
-	@Bind(R.id.btn_preview) // Ô¤ÀÀÐ§¹û
-	TextView btn_preview;
+	@Bind(R.id.img_1)
+	ImageView img_person;// Í·Ïñ
+	@Bind(R.id.img_2)
+	ImageView img_zhizhao;// Ö´ÕÕ
+	@Bind(R.id.tv_company_intro)
+	TextView tv_company_intro;// ¹«Ë¾½éÉÜ
+	@Bind(R.id.btn_delete)
+	TextView btn_delete;// É¾³ý
+	@Bind(R.id.btn_edit)
+	TextView btn_edit;// ±à¼­
+	@Bind(R.id.btn_preview)
+	TextView btn_preview;// Ô¤ÀÀÐ§¹û
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		setContentView(R.layout.ui_manage_contact_style);
+		setContentView(R.layout.ui_manage_company_intro_second);
 		ButterKnife.bind(this);
-		iniView();
+
+		initView();
 	}
 
-	private void iniView() {
-		myCommonTitle.setTitle(getString(R.string.manage_contacts_style));
+	private void initView() {
+		myCommonTitle.setTitle(getString(R.string.manage_company_intro));
 		myCommonTitle.setListener(this, null, null);
 		myCommonTitle.setBackTitle(getString(R.string.back));
 	}
@@ -46,7 +55,7 @@ public class ManageContactsStyleAcyivity extends BaseActivity {
 	 * É¾³ý
 	 */
 	@OnClick(R.id.btn_delete)
-	public void deletebtn_preview() {
+	public void deleteCompanyIntro() {
 		AlertDialog.Builder builder = new Builder(this);
 		builder.setMessage(getString(R.string.delete_message));
 		builder.setNegativeButton(getString(R.string.quxiao), new OnClickListener() {
@@ -60,26 +69,26 @@ public class ManageContactsStyleAcyivity extends BaseActivity {
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 
-				Tools.toast(ManageContactsStyleAcyivity.this, (getString(R.string.delete_sucess)));
+				Tools.toast(ManageCompanyIntroSecondActivity.this, (getString(R.string.delete_sucess)));
 			}
 		});
 		builder.create().show();
-
 	}
 
 	/**
 	 * ±à¼­
 	 */
 	@OnClick(R.id.btn_edit)
-	public void edit() {
-		startActivity(new Intent(ManageContactsStyleAcyivity.this, ManageContactsActivity.class));
+	public void editCompanyIntro() {
+		startActivity(new Intent(ManageCompanyIntroSecondActivity.this, ManageCompanyIntroFirstActivity.class));
+		finish();
 	}
 
 	/**
 	 * Ô¤ÀÀÐ§¹û
 	 */
 	@OnClick(R.id.btn_preview)
-	public void previewEffect() {
-		startActivity(new Intent(ManageContactsStyleAcyivity.this, MyShouZhanActivity.class));
+	public void previewCompanyIntro() {
+		startActivity(new Intent(ManageCompanyIntroSecondActivity.this, MyShouZhanActivity.class));
 	}
 }

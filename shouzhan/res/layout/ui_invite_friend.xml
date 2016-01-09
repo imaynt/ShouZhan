@@ -43,7 +43,7 @@
                 android:layout_width="100dp"
                 android:layout_height="30dp"
                 android:gravity="center"
-                android:background="@color/btn_lgrey"
+                android:background="@drawable/tab_fenxiang_bg"
                  android:textSize="16sp"
                 android:text="@string/share"
                 android:textColor="@color/background_title" />
@@ -54,7 +54,7 @@
                 android:layout_height="30dp"
                 android:gravity="center"
                 android:layout_marginLeft="10dp"
-                 android:background="@color/btn_lgrey"
+                 android:background="@drawable/tab_fuzhi_bg"
                 android:text="@string/copy"
                 android:textSize="16sp"
                 android:textColor="@color/background_title" />

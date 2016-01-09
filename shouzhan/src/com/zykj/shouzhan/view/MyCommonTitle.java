@@ -75,6 +75,11 @@ public class MyCommonTitle extends RelativeLayout {
 		titleText.setText(title);
 	}
 
+	public void setEditTitle(String edittitle) {
+		titleText = (TextView) findViewById(R.id.aci_edit_textview);// БъЬт
+		titleText.setText(edittitle);
+	}
+	
 	public TextView getTitle() {
 		return titleText;
 	}

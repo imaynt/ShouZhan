@@ -1,0 +1,117 @@
+package com.zykj.shouzhan.activity;
+
+import java.util.Timer;
+import java.util.TimerTask;
+
+import android.content.Intent;
+import android.location.Location;
+import android.os.Bundle;
+
+import com.alibaba.fastjson.JSONObject;
+import com.loopj.android.http.RequestParams;
+import com.zykj.shouzhan.BaseActivity;
+import com.zykj.shouzhan.BaseApp;
+import com.zykj.shouzhan.R;
+import com.zykj.shouzhan.utils.StringUtil;
+import com.zykj.shouzhan.utils.Tools;
+
+public class Welcome extends BaseActivity {
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		//在使用SDK各组件之前初始化context信息，传入ApplicationContext
+        //注意该方法要再setContentView方法之前实现
+		initView(R.layout.ui_welcome);
+		
+//		mLocationManger=LocationManagerProxy.getInstance(this);
+//		//进行一次定位
+//		mLocationManger.requestLocationData(LocationProviderProxy.AMapNetwork, -1, 15, mLocationListener);
+//		
+//		checkLogin();
+		Timer timer = new Timer();
+		TimerTask task = new TimerTask() {
+			public void run() {
+				String is_intro = getSharedPreferenceValue(BaseApp.IS_INTRO);
+				boolean should_intro = false;
+				int version = Tools.getAppVersion(Welcome.this);
+				String save_version = getSharedPreferenceValue(BaseApp.VERSION);
+				int save_version_int = save_version.equals("") ? -1 : Integer
+						.parseInt(save_version);
+
+				if (is_intro.length() > 0 && version == save_version_int) {// 已经进行过指引,且版本号符合
+					should_intro = false;
+				} else {
+					should_intro = false;//true
+				}
+
+				if (should_intro) {
+					Intent intent = new Intent(Welcome.this, IntroActivity.class);
+					startActivity(intent);
+				} else {
+					Intent intent = new Intent(Welcome.this, LoginOrRegisterActivity.class);
+					startActivity(intent);
+				}
+				finish();
+
+			}
+		};
+		timer.schedule(task, 2000);
+	}
+	
+//	private void checkLogin(){
+//		if(StringUtil.isEmpty(BaseApp.getModel().getUsername())){
+//			return;
+//		}
+//        RequestParams params = new RequestParams();
+//        params.put("mob", BaseApp.getModel().getMobile());
+//        params.put("pass", BaseApp.getModel().getPassword());
+//        HttpUtils.login(new HttpErrorHandler() {
+//			@Override
+//			public void onRecevieSuccess(JSONObject json) {
+//				JSONObject data = json.getJSONObject(UrlContants.jsonData);
+//				String avatar = StringUtil.toStringOfObject(data.getString("avatar"));
+//				BaseApp.getModel().setAvatar(avatar.replace("app.do", UrlContants.SERVERIP));//头像
+//				BaseApp.getModel().setMobile(StringUtil.toStringOfObject(data.getString("mobile")));//手机号
+//				BaseApp.getModel().setMoney(StringUtil.toStringOfObject(data.getString("account")));//我的钱包
+//				BaseApp.getModel().setIntegral(StringUtil.toStringOfObject(data.getString("points")));//积分
+//				BaseApp.getModel().setPassword(BaseApp.getModel().getPassword());//登录密码
+//				BaseApp.getModel().setUserid(StringUtil.toStringOfObject(data.getString("id")));//用户Id
+//				BaseApp.getModel().setUsername(StringUtil.toStringOfObject(data.getString("username")));//真实姓名
+//				BaseApp.getModel().setSign(StringUtil.toStringOfObject(data.getString("sign")));//是否签到
+//			}
+//			@Override
+//			public void onRecevieFailed(String status, JSONObject json) {
+//				BaseApp.getModel().clear();
+//				Tools.toast(Welcome.this, "登录失效!");
+//			}
+//		}, params);
+//	}	
+//	
+//	//定位
+//	private LocationManagerProxy mLocationManger;
+//	private AMapLocationListener mLocationListener=new AMapLocationListener() {
+//		
+//		@Override
+//		public void onStatusChanged(String provider, int status, Bundle extras) {}
+//		
+//		@Override
+//		public void onProviderEnabled(String provider) {}
+//		
+//		@Override
+//		public void onProviderDisabled(String provider) {}
+//		
+//		@Override
+//		public void onLocationChanged(Location location) {}
+//		
+//		@Override
+//		public void onLocationChanged(AMapLocation location) {
+//			Tools.CURRENTCITY = location.getCity();
+//			if (location != null && location.getAMapException().getErrorCode() == 0) {
+//				BaseApp.getModel().setLatitude(location.getLatitude()+"");
+//				BaseApp.getModel().setLongitude(location.getLongitude()+"");
+//				Tools.toast(Welcome.this, "城市="+location.getCity()+"lat="+location.getLatitude()+"long="+location.getLongitude());
+//			}else{
+//				Tools.toast(Welcome.this, "定位出现异常");
+//			}
+//		}
+//	};
+}
