@@ -12,20 +12,25 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup.LayoutParams;
+import android.widget.FrameLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ViewFlipper;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
 public class ProductForInfoActivity  extends BaseActivity {
 	
-	@Bind(R.id.viewflow) ViewFlow mViewFlow;
-	@Bind(R.id.viewflowindic) CircleFlowIndicator mFlowIndicator;
+	@Bind(R.id.viewflow) 		ViewFlow mViewFlow;
+	@Bind(R.id.viewflowindic)	CircleFlowIndicator mFlowIndicator;
+	@Bind(R.id.framelayout) 	FrameLayout framelayout;
 	private int mCurrPos;
 	private ViewFlipper notice_vf;
 	ArrayList<String> imageUrlList = new ArrayList<String>();
 	ArrayList<String> linkUrlArray= new ArrayList<String>();
 	ArrayList<String> titleList= new ArrayList<String>();
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -46,6 +51,13 @@ public class ProductForInfoActivity  extends BaseActivity {
 		titleList.add("GridView之仿支付宝钱包首页");
 		titleList.add("仿手机QQ网络状态条的显示与消失 ");
 		titleList.add("Android循环滚动广告条的完美实现 ");
+		
+		LayoutParams para;
+        para = framelayout.getLayoutParams();
+        
+        
+        
+		Toast.makeText(this,  framelayout.getMeasuredWidth()+"", Toast.LENGTH_SHORT).show();
 		
 		initBanner(imageUrlList);
 	}
